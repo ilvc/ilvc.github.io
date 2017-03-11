@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="lvc" />
+
+
+
+<meta name="description" content="Android 的 Drawable  Drawable 表示的是一中可以在Canvas上进行绘制的抽象概念，它的种类很多，最常见的颜色和  图片度可以是一个Drawable。  Drawable一般都是通过XML定义的，也可以使用代码来创建。
+Drawable的分类BitmapDrawable  几乎是是最简单的Drawable，它就是表示一张图片。  xml文件，
+属性123456789and">
+<meta property="og:type" content="article">
+<meta property="og:title" content="android笔记-Drawable">
+<meta property="og:url" content="http://pjc.party/2017/02/24/android笔记-Drawable/index.html">
+<meta property="og:site_name" content="iLvc's Blog">
+<meta property="og:description" content="Android 的 Drawable  Drawable 表示的是一中可以在Canvas上进行绘制的抽象概念，它的种类很多，最常见的颜色和  图片度可以是一个Drawable。  Drawable一般都是通过XML定义的，也可以使用代码来创建。
+Drawable的分类BitmapDrawable  几乎是是最简单的Drawable，它就是表示一张图片。  xml文件，
+属性123456789and">
+<meta property="og:updated_time" content="2017-03-01T13:53:44.292Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="android笔记-Drawable">
+<meta name="twitter:description" content="Android 的 Drawable  Drawable 表示的是一中可以在Canvas上进行绘制的抽象概念，它的种类很多，最常见的颜色和  图片度可以是一个Drawable。  Drawable一般都是通过XML定义的，也可以使用代码来创建。
+Drawable的分类BitmapDrawable  几乎是是最简单的Drawable，它就是表示一张图片。  xml文件，
+属性123456789and">
+
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="iLvc&#39;s Blog" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>android笔记-Drawable | iLvc&#39;s Blog</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: true
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?91a5cf9a85639ea8ef8502003a9f1e44";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">lvc</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">life may always have regret, but the future is still good.�������������ź�����δ���������á�</p>
+        
+
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:328097822@qq.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" href="https://github.com/ilvc" title="GitHub"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa QQ" href="/328097822" title="QQ"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java-web/">java web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaee/">javaee</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaee笔记/">javaee笔记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/学习/">学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/学习方法/">学习方法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/感悟/">感悟</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/春雏集/">春雏集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生活/">生活</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/闲言碎语/">闲言碎语</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http:/pjc.party/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">lvc</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">lvc</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">life may always have regret, but the future is still good.�������������ź�����δ���������á�</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:328097822@qq.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/ilvc" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa QQ" target="_blank" href="/328097822" title="QQ"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap"><article id="post-android笔记-Drawable" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/02/24/android笔记-Drawable/" class="article-date">
+      <time datetime="2017-02-24T01:22:51.000Z" itemprop="datePublished">2017-02-24</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      android笔记-Drawable
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/android/">android</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="Android-的-Drawable"><a href="#Android-的-Drawable" class="headerlink" title="Android 的 Drawable"></a>Android 的 Drawable</h1><p>  Drawable 表示的是一中可以在Canvas上进行绘制的抽象概念，它的种类很多，最常见的颜色和<br>  图片度可以是一个Drawable。<br>  Drawable一般都是通过XML定义的，也可以使用代码来创建。</p>
+<h1 id="Drawable的分类"><a href="#Drawable的分类" class="headerlink" title="Drawable的分类"></a>Drawable的分类</h1><h2 id="BitmapDrawable"><a href="#BitmapDrawable" class="headerlink" title="BitmapDrawable"></a>BitmapDrawable</h2><p>  几乎是是最简单的Drawable，它就是表示一张图片。<br>  xml文件，<bitmap></bitmap></p>
+<h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">android:antialias		抗锯齿            </div><div class="line">android:dither		  抖动效果        </div><div class="line">android:filter		  过滤效果</div><div class="line">android:gravity		  对图片进行定位，当图片小于容器时。</div><div class="line">android:mipMap	     </div><div class="line">android:src		      </div><div class="line">android:tileMode		平铺模式          disabled 、clamp、reapt 、mirror</div><div class="line">android:tileModeX</div><div class="line">android:tileModeY</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="ShapeDrawable"><a href="#ShapeDrawable" class="headerlink" title="ShapeDrawable"></a>ShapeDrawable</h2><blockquote>
+<p>形状的Drawable咯,定义基本的几何图形,如(矩形,圆形,线条等),根元素是<shape..> 节点比较多，相关的节点如下：</shape..></p>
+<ul>
+<li>① shape:</li>
+<li>~ visible:设置是否可见</li>
+<li>~ shape:形状,可选:rectangle(矩形,包括正方形),oval(椭圆,包括圆),line(线段),ring(环形)</li>
+<li>~ innerRadiusRatio:当shape为ring才有效,表示环内半径所占半径的比率,如果设置了innerRadius, 他会被忽略</li>
+<li>~ innerRadius:当shape为ring才有效,表示环的内半径的尺寸</li>
+<li>~ thicknessRatio:当shape为ring才有效,表环厚度占半径的比率</li>
+<li>~ thickness:当shape为ring才有效,表示环的厚度,即外半径与内半径的差</li>
+<li>~ useLevel:当shape为ring才有效,表示是否允许根据level来显示环的一部分</li>
+<li>② size</li>
+<li>~ width:图形形状宽度</li>
+<li>~ height:图形形状高度</li>
+<li>③ &lt;gradient 》 后面GradientDrawable再讲~</li>
+<li>④ solid</li>
+<li>~ color:背景填充色,设置solid后会覆盖gradient设置的所有效果!!!!!!</li>
+<li>⑤ stroke</li>
+<li>~ width:边框的宽度</li>
+<li>~ color:边框的颜色</li>
+<li>~ dashWidth:边框虚线段的长度</li>
+<li>~ dashGap:边框的虚线段的间距</li>
+<li>⑥ conner</li>
+<li>~ radius:圆角半径,适用于上下左右四个角</li>
+<li>~ topLeftRadius,topRightRadius,BottomLeftRadius,tBottomRightRadius: 依次是左上,右上,左下,右下的圆角值,按自己需要设置!</li>
+<li>⑦ padding</li>
+<li>left,top,right,bottm:依次是左上右下方向上的边距!</li>
+</ul>
+</blockquote>
+<h2 id="LayerDrawable"><a href="#LayerDrawable" class="headerlink" title="LayerDrawable"></a>LayerDrawable</h2><h2 id="StateListDrawable"><a href="#StateListDrawable" class="headerlink" title="StateListDrawable"></a>StateListDrawable</h2><p>属性：</p>
+<ul>
+<li>drawable:引用的Drawable位图,我们可以把他放到最前面,就表示组件的正常状态~</li>
+<li>state_focused:是否获得焦点</li>
+<li>state_window_focused:是否获得窗口焦点</li>
+<li>state_enabled:控件是否可用</li>
+<li>state_checkable:控件可否被勾选,eg:checkbox</li>
+<li>state_checked:控件是否被勾选</li>
+<li>state_selected:控件是否被选择,针对有滚轮的情况</li>
+<li>state_pressed:控件是否被按下</li>
+<li>state_active:控件是否处于活动状态,eg:slidingTab</li>
+<li>state_single:控件包含多个子控件时,确定是否只显示一个子控件</li>
+<li>state_first:控件包含多个子控件时,确定第一个子控件是否处于显示状态</li>
+<li>state_middle:控件包含多个子控件时,确定中间一个子控件是否处于显示状态</li>
+<li>state_last:控件包含多个子控件时,确定最后一个子控件是否处于显示状态</li>
+</ul>
+<h2 id="LeveListDrawable"><a href="#LeveListDrawable" class="headerlink" title="LeveListDrawable"></a>LeveListDrawable</h2><h2 id="TransitionDrawablw"><a href="#TransitionDrawablw" class="headerlink" title="TransitionDrawablw"></a>TransitionDrawablw</h2><h2 id="InsetDrawable"><a href="#InsetDrawable" class="headerlink" title="InsetDrawable"></a>InsetDrawable</h2><h2 id="ScaleDrawable"><a href="#ScaleDrawable" class="headerlink" title="ScaleDrawable"></a>ScaleDrawable</h2><h2 id="clipDrawable"><a href="#clipDrawable" class="headerlink" title="clipDrawable"></a>clipDrawable</h2><h1 id="自定义Drawable"><a href="#自定义Drawable" class="headerlink" title="自定义Drawable"></a>自定义Drawable</h1>
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/02/24/android笔记-Drawable/">android笔记-Drawable</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">lvc</a></p>
+        <p><span>发布时间:</span>2017-02-24, 09:22:51</p>
+        <p><span>最后更新:</span>2017-03-01, 21:53:44</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/02/24/android笔记-Drawable/" title="android笔记-Drawable">http://pjc.party/2017/02/24/android笔记-Drawable/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://pjc.party/2017/02/24/android笔记-Drawable/　　作者: lvc" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2017/02/25/Android上课笔记-快速入门/">
+                    Android上课笔记-快速入门
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2017/02/22/春雏集-优雅的活着/">
+                    春雏集:优雅的活着
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Android-的-Drawable"><span class="toc-number">1.</span> <span class="toc-text">Android 的 Drawable</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Drawable的分类"><span class="toc-number">2.</span> <span class="toc-text">Drawable的分类</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#BitmapDrawable"><span class="toc-number">2.1.</span> <span class="toc-text">BitmapDrawable</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#属性"><span class="toc-number">2.1.1.</span> <span class="toc-text">属性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ShapeDrawable"><span class="toc-number">2.2.</span> <span class="toc-text">ShapeDrawable</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LayerDrawable"><span class="toc-number">2.3.</span> <span class="toc-text">LayerDrawable</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#StateListDrawable"><span class="toc-number">2.4.</span> <span class="toc-text">StateListDrawable</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#LeveListDrawable"><span class="toc-number">2.5.</span> <span class="toc-text">LeveListDrawable</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#TransitionDrawablw"><span class="toc-number">2.6.</span> <span class="toc-text">TransitionDrawablw</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#InsetDrawable"><span class="toc-number">2.7.</span> <span class="toc-text">InsetDrawable</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ScaleDrawable"><span class="toc-number">2.8.</span> <span class="toc-text">ScaleDrawable</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#clipDrawable"><span class="toc-number">2.9.</span> <span class="toc-text">clipDrawable</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#自定义Drawable"><span class="toc-number">3.</span> <span class="toc-text">自定义Drawable</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"android笔记-Drawable　| iLvc's Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <div id="comment-box" ></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2017/02/24/android笔记-Drawable/" data-title="android笔记-Drawable" data-url="http://pjc.party/2017/02/24/android笔记-Drawable/"></div>
+    <script>
+        var duoshuoQuery = {short_name:"pjcparty"};
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            s.async = true; s.charset = 'UTF-8';
+            (d.head || d.body).appendChild(s);
+        }
+
+        
+    </script>
+    
+    <script> loadComment(); </script>
+
+</div>
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/02/25/Android上课笔记-快速入门/" title="上一篇: Android上课笔记-快速入门">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2017/02/22/春雏集-优雅的活着/" title="下一篇: 春雏集:优雅的活着">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/03/11/闲言碎语-心灵访客/">闲言碎语-心灵访客</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/11/android：卫星式菜单/">android：卫星式菜单</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/11/深入理解Android中的自定义属性/">深入理解Android中的自定义属性</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/05/学习方法：黑马高薪学习方法/">学习方法：黑马高薪学习方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/05/春雏集-流动的思绪/">春雏集-流动的思绪</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/03/javaee上课笔记-Servlet事件监听器/">javaee上课笔记-Servlet事件监听器</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/01/春雏集：看见花落也凋零/">春雏集：看见花落也凋零</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/01/javaee上课笔记-DBUtils工具/">javaee上课笔记:DBUtils工具</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/25/Android上课笔记-快速入门/">Android上课笔记-快速入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/24/android笔记-Drawable/">android笔记-Drawable</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/22/春雏集-优雅的活着/">春雏集:优雅的活着</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/20/Android上课笔记-第一课/">Android笔记-第一课</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/20/javaweb实战：网上书城/">javaweb实战：网上书城</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/20/开学笔记/">开学笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/10/春雏集-三月花/">春雏集-三月花</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/09/android笔记-Android文件下载/">android笔记-Android文件下载</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/07/android笔记-HttpURLConnection/">android笔记-HttpURLConnection</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/06/闲言碎语-西游降魔篇/">闲言碎语-西游降魔篇</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/06/android笔记-调用摄像头相册/">android笔记-调用摄像头相册</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/05/android笔记-使用通知/">android笔记-使用通知</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/03/我的第一篇博客/">我的第一篇博客</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2016-2017 lvc
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+             categories: ".article-category a, a.tag-list-link", 
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+             menu: ".header-menu a", 
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>

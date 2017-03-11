@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="lvc" />
+
+
+
+<meta name="description" content="javawe实战：网上书城  前台项目概述需求分析
+ 1.统一友好的操作界面，具有良好的用户体验。  2.商品分类详尽，可按不同类别查看商品信息。  3.公告栏，本周热卖。  4.网站首页轮播图满足图书广告的需要。  5.用户信息的注册和验证。  6.通过图书名模糊搜索相关商品。  7.通过购物车一次购买多件商品。  8.提供简单的安全模型，用户必须登录后购买商品。  9.用户选择商品后可以在线提">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javaweb实战：网上书城">
+<meta property="og:url" content="http://pjc.party/2017/02/20/javaweb实战：网上书城/index.html">
+<meta property="og:site_name" content="iLvc's Blog">
+<meta property="og:description" content="javawe实战：网上书城  前台项目概述需求分析
+ 1.统一友好的操作界面，具有良好的用户体验。  2.商品分类详尽，可按不同类别查看商品信息。  3.公告栏，本周热卖。  4.网站首页轮播图满足图书广告的需要。  5.用户信息的注册和验证。  6.通过图书名模糊搜索相关商品。  7.通过购物车一次购买多件商品。  8.提供简单的安全模型，用户必须登录后购买商品。  9.用户选择商品后可以在线提">
+<meta property="og:image" content="http://ol5smga16.bkt.clouddn.com/17-2-21/15084346-file_1487665255746_e9af.png">
+<meta property="og:image" content="http://ol5smga16.bkt.clouddn.com/17-2-21/34070112-file_1487665738129_caba.png">
+<meta property="og:updated_time" content="2017-03-11T05:05:30.897Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="javaweb实战：网上书城">
+<meta name="twitter:description" content="javawe实战：网上书城  前台项目概述需求分析
+ 1.统一友好的操作界面，具有良好的用户体验。  2.商品分类详尽，可按不同类别查看商品信息。  3.公告栏，本周热卖。  4.网站首页轮播图满足图书广告的需要。  5.用户信息的注册和验证。  6.通过图书名模糊搜索相关商品。  7.通过购物车一次购买多件商品。  8.提供简单的安全模型，用户必须登录后购买商品。  9.用户选择商品后可以在线提">
+<meta name="twitter:image" content="http://ol5smga16.bkt.clouddn.com/17-2-21/15084346-file_1487665255746_e9af.png">
+
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="iLvc&#39;s Blog" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>javaweb实战：网上书城 | iLvc&#39;s Blog</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: true
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?91a5cf9a85639ea8ef8502003a9f1e44";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">lvc</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">life may always have regret, but the future is still good.�������������ź�����δ���������á�</p>
+        
+
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:328097822@qq.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" href="https://github.com/ilvc" title="GitHub"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa QQ" href="/328097822" title="QQ"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java-web/">java web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaee/">javaee</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaee笔记/">javaee笔记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/学习/">学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/学习方法/">学习方法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/感悟/">感悟</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/春雏集/">春雏集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生活/">生活</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/闲言碎语/">闲言碎语</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http:/pjc.party/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">lvc</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">lvc</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">life may always have regret, but the future is still good.�������������ź�����δ���������á�</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:328097822@qq.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/ilvc" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa QQ" target="_blank" href="/328097822" title="QQ"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap"><article id="post-javaweb实战：网上书城" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/02/20/javaweb实战：网上书城/" class="article-date">
+      <time datetime="2017-02-20T03:03:43.000Z" itemprop="datePublished">2017-02-20</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      javaweb实战：网上书城
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/javaee笔记/">javaee笔记</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javaee/">javaee</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="javawe实战：网上书城-前台"><a href="#javawe实战：网上书城-前台" class="headerlink" title="javawe实战：网上书城  前台"></a>javawe实战：网上书城  前台</h1><h2 id="项目概述"><a href="#项目概述" class="headerlink" title="项目概述"></a>项目概述</h2><h3 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h3><blockquote>
+<p> 1.统一友好的操作界面，具有良好的用户体验。<br>  2.商品分类详尽，可按不同类别查看商品信息。<br>  3.公告栏，本周热卖。<br>  4.网站首页轮播图满足图书广告的需要。<br>  5.用户信息的注册和验证。<br>  6.通过图书名模糊搜索相关商品。<br>  7.通过购物车一次购买多件商品。<br>  8.提供简单的安全模型，用户必须登录后购买商品。<br>  9.用户选择商品后可以在线提交订单。<br>  10.用户可以查看自己的订单信息。<br>  11.设计网站后台，管理网站的各项基本数据.<br>  12.系统运行安全稳定且响应及时。</p>
+</blockquote>
+<h3 id="功能结构"><a href="#功能结构" class="headerlink" title="功能结构"></a>功能结构</h3><p>  <img src="http://ol5smga16.bkt.clouddn.com/17-2-21/15084346-file_1487665255746_e9af.png" class="full-image"><br>  <img src="http://ol5smga16.bkt.clouddn.com/17-2-21/34070112-file_1487665738129_caba.png" width="500px" heigth="500px" class="full-image"><br><a id="more"></a></p>
+<h3 id="项目预览"><a href="#项目预览" class="headerlink" title="项目预览"></a>项目预览</h3><h2 id="数据库设计"><a href="#数据库设计" class="headerlink" title="数据库设计"></a>数据库设计</h2><h3 id="E-R图设计"><a href="#E-R图设计" class="headerlink" title="E-R图设计"></a>E-R图设计</h3><h2 id="创建数据库和数据表"><a href="#创建数据库和数据表" class="headerlink" title="创建数据库和数据表"></a>创建数据库和数据表</h2><h2 id="项目前期准备"><a href="#项目前期准备" class="headerlink" title="项目前期准备"></a>项目前期准备</h2><ul>
+<li>1.新建一个动态的web项目，名称为BooKStore</li>
+<li>2.确定项目运行的环境版本<br>  网上书城项目使用数据库MYSQL5.7版本，Java开发包为1.8 ，开发IDE MyEclipse 2016</li>
+<li>3.将本项目所需jar包导入项目的lib文件下。<br>  a.本项目使用c3p0数据源链接数据库，需要c3p0的jar包。<br>  b.项目的jsp页面使用了JSTL标签库，需要jstl.jar和 standard.jar包。<br>  c.项目中使用DBUtils工具处理数据的持久化操作，需要导入BeanUtils工具包。<br>  d.由于在注册时系统还会给注册用户填写的邮箱发送一封激活码，需要导入mail.jar包。<br>  本项目所需jar包如图所示：</li>
+<li>4.配置c3p0-config.xml。<br>  在项目Src根目录下创建该文件夹<br>  配置如图所示：</li>
+<li><p>5.编写filter过滤器<br>  a.防止项目请求和响应时出现的乱码情况，需要编写一个过滤器 EcondingFilter.java<br>  来统一全站编码，</p>
+<p>  b.由于本项目分为前后台，只有超级用户才能登陆后台管理系统，所以在用户登录时需要<br>  一个能够判断当前用户是否具有权限登录后台的过滤器，AdminPrivilegeFilter.java</p>
+</li>
+<li>编写工具类DataSourceUtils<br>该类用于获取数据源和数据库的链接</li>
+</ul>
+<h2 id="用户注册和登录模块"><a href="#用户注册和登录模块" class="headerlink" title="用户注册和登录模块"></a>用户注册和登录模块</h2><h3 id="用户注册"><a href="#用户注册" class="headerlink" title="用户注册"></a>用户注册</h3><h3 id="用户登录"><a href="#用户登录" class="headerlink" title="用户登录"></a>用户登录</h3><h2 id="购物车模块"><a href="#购物车模块" class="headerlink" title="购物车模块"></a>购物车模块</h2><h3 id="模块描述"><a href="#模块描述" class="headerlink" title="模块描述"></a>模块描述</h3><h3 id="实现购物车的基本功能"><a href="#实现购物车的基本功能" class="headerlink" title="实现购物车的基本功能"></a>实现购物车的基本功能</h3><h3 id="实现订单的相关功能"><a href="#实现订单的相关功能" class="headerlink" title="实现订单的相关功能"></a>实现订单的相关功能</h3><h2 id="图书信息查询模块"><a href="#图书信息查询模块" class="headerlink" title="图书信息查询模块"></a>图书信息查询模块</h2><h3 id="商品分类导航栏"><a href="#商品分类导航栏" class="headerlink" title="商品分类导航栏"></a>商品分类导航栏</h3><h3 id="搜索功能"><a href="#搜索功能" class="headerlink" title="搜索功能"></a>搜索功能</h3><h3 id="公告板和本周热卖"><a href="#公告板和本周热卖" class="headerlink" title="公告板和本周热卖"></a>公告板和本周热卖</h3><h2 id="前台小结"><a href="#前台小结" class="headerlink" title="前台小结"></a>前台小结</h2><h1 id="javawe实战：网上书城-后端管理"><a href="#javawe实战：网上书城-后端管理" class="headerlink" title="javawe实战：网上书城  后端管理"></a>javawe实战：网上书城  后端管理</h1><h2 id="后台管理系统概述"><a href="#后台管理系统概述" class="headerlink" title="后台管理系统概述"></a>后台管理系统概述</h2><h2 id="商品管理模块"><a href="#商品管理模块" class="headerlink" title="商品管理模块"></a>商品管理模块</h2><h3 id="商品管理模块简介"><a href="#商品管理模块简介" class="headerlink" title="商品管理模块简介"></a>商品管理模块简介</h3><h3 id="实现查询商品列表功能"><a href="#实现查询商品列表功能" class="headerlink" title="实现查询商品列表功能"></a>实现查询商品列表功能</h3><h3 id="实现添加商品信息功能"><a href="#实现添加商品信息功能" class="headerlink" title="实现添加商品信息功能"></a>实现添加商品信息功能</h3><h3 id="实现编辑商品信息功能"><a href="#实现编辑商品信息功能" class="headerlink" title="实现编辑商品信息功能"></a>实现编辑商品信息功能</h3><h3 id="实现删除商品信息功能"><a href="#实现删除商品信息功能" class="headerlink" title="实现删除商品信息功能"></a>实现删除商品信息功能</h3><h2 id="销售榜单模块"><a href="#销售榜单模块" class="headerlink" title="销售榜单模块"></a>销售榜单模块</h2><h2 id="订单管理模块"><a href="#订单管理模块" class="headerlink" title="订单管理模块"></a>订单管理模块</h2><h3 id="订单管理模块简介"><a href="#订单管理模块简介" class="headerlink" title="订单管理模块简介"></a>订单管理模块简介</h3><h3 id="实现查询订单列表功能"><a href="#实现查询订单列表功能" class="headerlink" title="实现查询订单列表功能"></a>实现查询订单列表功能</h3><h3 id="实现查看订单详情功能"><a href="#实现查看订单详情功能" class="headerlink" title="实现查看订单详情功能"></a>实现查看订单详情功能</h3><h3 id="实现删除订单功能"><a href="#实现删除订单功能" class="headerlink" title="实现删除订单功能"></a>实现删除订单功能</h3><h2 id="后台小结"><a href="#后台小结" class="headerlink" title="后台小结"></a>后台小结</h2>
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/02/20/javaweb实战：网上书城/">javaweb实战：网上书城</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">lvc</a></p>
+        <p><span>发布时间:</span>2017-02-20, 11:03:43</p>
+        <p><span>最后更新:</span>2017-03-11, 13:05:30</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/02/20/javaweb实战：网上书城/" title="javaweb实战：网上书城">http://pjc.party/2017/02/20/javaweb实战：网上书城/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://pjc.party/2017/02/20/javaweb实战：网上书城/　　作者: lvc" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2017/02/20/Android上课笔记-第一课/">
+                    Android笔记-第一课
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2017/02/20/开学笔记/">
+                    开学笔记
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#javawe实战：网上书城-前台"><span class="toc-number">1.</span> <span class="toc-text">javawe实战：网上书城  前台</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#项目概述"><span class="toc-number">1.1.</span> <span class="toc-text">项目概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#需求分析"><span class="toc-number">1.1.1.</span> <span class="toc-text">需求分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#功能结构"><span class="toc-number">1.1.2.</span> <span class="toc-text">功能结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#项目预览"><span class="toc-number">1.1.3.</span> <span class="toc-text">项目预览</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数据库设计"><span class="toc-number">1.2.</span> <span class="toc-text">数据库设计</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#E-R图设计"><span class="toc-number">1.2.1.</span> <span class="toc-text">E-R图设计</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#创建数据库和数据表"><span class="toc-number">1.3.</span> <span class="toc-text">创建数据库和数据表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#项目前期准备"><span class="toc-number">1.4.</span> <span class="toc-text">项目前期准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用户注册和登录模块"><span class="toc-number">1.5.</span> <span class="toc-text">用户注册和登录模块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#用户注册"><span class="toc-number">1.5.1.</span> <span class="toc-text">用户注册</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#用户登录"><span class="toc-number">1.5.2.</span> <span class="toc-text">用户登录</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#购物车模块"><span class="toc-number">1.6.</span> <span class="toc-text">购物车模块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#模块描述"><span class="toc-number">1.6.1.</span> <span class="toc-text">模块描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实现购物车的基本功能"><span class="toc-number">1.6.2.</span> <span class="toc-text">实现购物车的基本功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实现订单的相关功能"><span class="toc-number">1.6.3.</span> <span class="toc-text">实现订单的相关功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图书信息查询模块"><span class="toc-number">1.7.</span> <span class="toc-text">图书信息查询模块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#商品分类导航栏"><span class="toc-number">1.7.1.</span> <span class="toc-text">商品分类导航栏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#搜索功能"><span class="toc-number">1.7.2.</span> <span class="toc-text">搜索功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#公告板和本周热卖"><span class="toc-number">1.7.3.</span> <span class="toc-text">公告板和本周热卖</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#前台小结"><span class="toc-number">1.8.</span> <span class="toc-text">前台小结</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#javawe实战：网上书城-后端管理"><span class="toc-number">2.</span> <span class="toc-text">javawe实战：网上书城  后端管理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#后台管理系统概述"><span class="toc-number">2.1.</span> <span class="toc-text">后台管理系统概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#商品管理模块"><span class="toc-number">2.2.</span> <span class="toc-text">商品管理模块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#商品管理模块简介"><span class="toc-number">2.2.1.</span> <span class="toc-text">商品管理模块简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实现查询商品列表功能"><span class="toc-number">2.2.2.</span> <span class="toc-text">实现查询商品列表功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实现添加商品信息功能"><span class="toc-number">2.2.3.</span> <span class="toc-text">实现添加商品信息功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实现编辑商品信息功能"><span class="toc-number">2.2.4.</span> <span class="toc-text">实现编辑商品信息功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实现删除商品信息功能"><span class="toc-number">2.2.5.</span> <span class="toc-text">实现删除商品信息功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#销售榜单模块"><span class="toc-number">2.3.</span> <span class="toc-text">销售榜单模块</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#订单管理模块"><span class="toc-number">2.4.</span> <span class="toc-text">订单管理模块</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#订单管理模块简介"><span class="toc-number">2.4.1.</span> <span class="toc-text">订单管理模块简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实现查询订单列表功能"><span class="toc-number">2.4.2.</span> <span class="toc-text">实现查询订单列表功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实现查看订单详情功能"><span class="toc-number">2.4.3.</span> <span class="toc-text">实现查看订单详情功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实现删除订单功能"><span class="toc-number">2.4.4.</span> <span class="toc-text">实现删除订单功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后台小结"><span class="toc-number">2.5.</span> <span class="toc-text">后台小结</span></a></li></ol></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"javaweb实战：网上书城　| iLvc's Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <div id="comment-box" ></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2017/02/20/javaweb实战：网上书城/" data-title="javaweb实战：网上书城" data-url="http://pjc.party/2017/02/20/javaweb实战：网上书城/"></div>
+    <script>
+        var duoshuoQuery = {short_name:"pjcparty"};
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            s.async = true; s.charset = 'UTF-8';
+            (d.head || d.body).appendChild(s);
+        }
+
+        
+    </script>
+    
+    <script> loadComment(); </script>
+
+</div>
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/02/20/Android上课笔记-第一课/" title="上一篇: Android笔记-第一课">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2017/02/20/开学笔记/" title="下一篇: 开学笔记">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/03/11/闲言碎语-心灵访客/">闲言碎语-心灵访客</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/11/android：卫星式菜单/">android：卫星式菜单</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/11/深入理解Android中的自定义属性/">深入理解Android中的自定义属性</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/05/学习方法：黑马高薪学习方法/">学习方法：黑马高薪学习方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/05/春雏集-流动的思绪/">春雏集-流动的思绪</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/03/javaee上课笔记-Servlet事件监听器/">javaee上课笔记-Servlet事件监听器</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/01/春雏集：看见花落也凋零/">春雏集：看见花落也凋零</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/01/javaee上课笔记-DBUtils工具/">javaee上课笔记:DBUtils工具</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/25/Android上课笔记-快速入门/">Android上课笔记-快速入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/24/android笔记-Drawable/">android笔记-Drawable</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/22/春雏集-优雅的活着/">春雏集:优雅的活着</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/20/Android上课笔记-第一课/">Android笔记-第一课</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/20/javaweb实战：网上书城/">javaweb实战：网上书城</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/20/开学笔记/">开学笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/10/春雏集-三月花/">春雏集-三月花</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/09/android笔记-Android文件下载/">android笔记-Android文件下载</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/07/android笔记-HttpURLConnection/">android笔记-HttpURLConnection</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/06/闲言碎语-西游降魔篇/">闲言碎语-西游降魔篇</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/06/android笔记-调用摄像头相册/">android笔记-调用摄像头相册</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/05/android笔记-使用通知/">android笔记-使用通知</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/03/我的第一篇博客/">我的第一篇博客</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2016-2017 lvc
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+             categories: ".article-category a, a.tag-list-link", 
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+             menu: ".header-menu a", 
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>

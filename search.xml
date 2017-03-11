@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[闲言碎语-心灵访客]]></title>
+      <url>http://pjc.party/2017/03/11/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD-%E5%BF%83%E7%81%B5%E8%AE%BF%E5%AE%A2/</url>
+      <content type="html"><![CDATA[<h1 id="《心灵访客》"><a href="#《心灵访客》" class="headerlink" title="《心灵访客》"></a>《心灵访客》</h1>]]></content>
+      
+        <categories>
+            
+            <category> 春雏集 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 闲言碎语 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[android：卫星式菜单]]></title>
+      <url>http://pjc.party/2017/03/11/android%EF%BC%9A%E5%8D%AB%E6%98%9F%E5%BC%8F%E8%8F%9C%E5%8D%95/</url>
+      <content type="html"><![CDATA[<h1 id="Android自定义控件"><a href="#Android自定义控件" class="headerlink" title="Android自定义控件"></a>Android自定义控件</h1><p>实现步骤：</p>
+<pre><code>* 一、动画
+* 二、自定义属性
+</code></pre>]]></content>
+      
+        <categories>
+            
+            <category> android自定义控件 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> android </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[深入理解Android中的自定义属性]]></title>
+      <url>http://pjc.party/2017/03/11/%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3Android%E4%B8%AD%E7%9A%84%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B1%9E%E6%80%A7/</url>
+      <content type="html"><![CDATA[<blockquote>
+<p>转载请标明出处：<br><a href="http://blog.csdn.net/lmj623565791/article/details/45022631；" target="_blank" rel="external">http://blog.csdn.net/lmj623565791/article/details/45022631；</a> 本文出自:【张鸿洋的博客】</p>
+</blockquote>
+<h1 id="1-引言"><a href="#1-引言" class="headerlink" title="1.引言"></a>1.引言</h1><p>对于自定义属性，大家肯定都不陌生，遵循以下几步，就可以实现：</p>
+<pre><code>* 自定义一个CustomView(extends View )类
+* 编写values/attrs.xml，在其中编写styleable和item等标签元素
+* 在布局文件中CustomView使用自定义的属性（注意namespace）
+* 在CustomView的构造方法中通过TypedArray获取
+</code></pre>]]></content>
+      
+        <categories>
+            
+            <category> 转载 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> android </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[学习方法：黑马高薪学习方法]]></title>
+      <url>http://pjc.party/2017/03/05/%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95%EF%BC%9A%E9%BB%91%E9%A9%AC%E9%AB%98%E8%96%AA%E5%AD%A6%E4%B9%A0%E6%96%B9%E6%B3%95/</url>
+      <content type="html"><![CDATA[<h1 id="学习方法：黑马高薪学习方法"><a href="#学习方法：黑马高薪学习方法" class="headerlink" title="学习方法：黑马高薪学习方法"></a>学习方法：黑马高薪学习方法</h1><p><a href="http://bbs.itheima.com/forum.PHP?mod=viewthread&amp;tid=63387&amp;extra=page%3D1" target="_blank" rel="external">原文地址</a></p>
+<blockquote>
+<p><code>此文章是黑马老学员给新学员的学习建议，一个来自高薪学员的心声，望仔细耐心看完，这将是你在黑马学习的重要指南。</code></p>
+</blockquote>
+<p>四个半月的时光转瞬而逝，我如愿以偿地拿到了让自己满意的offer，这都必须归功于黑马辛苦教学的老师以及身边勤奋学习的同学们对我不断地鼓励和支持。在黑马学习期间，我享受到了以前从未有过的充实生活，并且这段人生经历激发了我对技术难以磨灭的热情，这份热情即使在我就职之后依然持续地灼烧着。因此，怀着感恩的心情，我认为自己必须为黑马做点什么，所以才有了这篇关于学习方法的总结。希望学弟学妹们能从这里汲取到有利于自己的学习思路，从而让自己能够用更短的时间学习到更多的知识，利用黑马这优质的平台，让自己在技术的道路上走得更快，更远。</p>
+<p>记得入学后不久，我们就进行了第一次测验。然后，同学们学习效率的差距惊人地暴露出来了。令人诧异的是，很多同学学习很辛苦，甚至经常熬夜，但是学习效果并没有预想的那么好。反之，很多同学学习时间很短，但是效果却非常地惊人。于是，我就开始思考是什么原因导致了这种差异？通过与很多同学的沟通和交流，我终于明白学习方法起到了至关重要的作用。那么好的学习方法应该注意哪些方面呢？我认为只要你能够经常问自己下面八个问题，你就可以确定自己是不是走在正轨上。</p>
+<h2 id="Question-1：明天会上哪些内容的课程呢？"><a href="#Question-1：明天会上哪些内容的课程呢？" class="headerlink" title="Question 1：明天会上哪些内容的课程呢？"></a>Question 1：明天会上哪些内容的课程呢？</h2><p>　　如果可以的话，你可以拷贝到往届学长学姐们的笔记，每天利用5分钟的时间大致浏览第二天的课程，从而能够从全局把握课程结构，从而使自己在第二天老师6个小时的狂轰滥炸中不至于处于被动，然后不知道自己所处何处。反之，你就可以化被动为主动，从而可以将6个小时的课程切割成对应于各个知识点的小模块。通过这种方式，你就可以极大地提升自己的听课质量。</p>
+<h2 id="Question-2：今天的课程我完全听懂了吗？"><a href="#Question-2：今天的课程我完全听懂了吗？" class="headerlink" title="Question 2：今天的课程我完全听懂了吗？"></a>Question 2：今天的课程我完全听懂了吗？</h2><p>　　听课质量的高低对学习效果可以说起到了中流砥柱的作用。试想一下，如果你的听课效率质量很高，那么晚上敲代码、复习的时间就可以大大地减少。因为，你不会再对着老师分发的代码和资料问自己一些愚蠢的问题。例如：这段代码是干什么的来着？这个知识点好像完全没听懂。这些令人抓狂的问题会严重挫伤你学习的积极性。因此，如果上课有任何内容没有听懂，那么不要忽略掉，应该把自己想问的问题记录下来，下课之后，立刻通过与同学和老师的讨论解决掉。</p>
+<h2 id="Question-3：今天我对哪些问题有疑问呢？"><a href="#Question-3：今天我对哪些问题有疑问呢？" class="headerlink" title="Question 3：今天我对哪些问题有疑问呢？"></a>Question 3：今天我对哪些问题有疑问呢？</h2><p>　　如果你是抱着积极的学习态度在听课，那么你一定会在上课期间产生各种各样的idea。你可能在想一种代码效果有没有另外一种实现方式，或者另外一种配置方式会有什么效果。这时候，一定要迅速记录下来这些问题，不要占用上课时间跟同学讨论或者自己纠结于此。因为，一旦你这样做，后面的课程你就完全不会在用心听了，这就降低了听课的质量。</p>
+<h2 id="Question-4：有疑问的问题自己可以通过网络或者写一些例子得到结果吗？"><a href="#Question-4：有疑问的问题自己可以通过网络或者写一些例子得到结果吗？" class="headerlink" title="Question 4：有疑问的问题自己可以通过网络或者写一些例子得到结果吗？"></a>Question 4：有疑问的问题自己可以通过网络或者写一些例子得到结果吗？</h2><p>　　产生任何问题之后，不要急于问老师和同学，而是要培养自己独立学习和解决问题的能力。你可以通过网络或者API文档查询到结果，又或者自己写一个例子程序得到答案。如果实在有困难，再向学生和老师求助。这样，可以培养你独立解决问题的能力。毕竟，在公司里，是没有太多人给你全方位的指导和帮助的，不是吗？</p>
+<a id="more"></a>
+<h2 id="Question-5：今天的代码我有敲完吗？"><a href="#Question-5：今天的代码我有敲完吗？" class="headerlink" title="Question 5：今天的代码我有敲完吗？"></a>Question 5：今天的代码我有敲完吗？</h2><p>　　很多同学有时候会进入一个误区，那就是他认为上课的时候代码已经完全理解了，下课就没有必要再敲这些代码了，这就走向了一个极端。另外一个极端则是认为代码必须自己从头到尾一个字母不漏的敲出来才算掌握了。实际上，代码最重要的是写出思路，然后通过查询API文档完成代码。当然，第一次敲代码的时候最好可以临摹老师的代码，然后再自己独立完成。否则，由于难度太大，可能会打消学习的积极性并且浪费时间在回忆代码上。另外一个需要指出的点是，千万不要给自己拖延的理由，今天的代码今天必须要完成，即使奋战到凌晨2点也在所不惜。如果你拖延到明天，那么再加上第二天的代码量，你会倾向于放弃昨天的代码，甚至对今天的代码也感到厌烦。毕竟学习的时间是有限的，利用一天的时间承担两天的任务量，没有压力才怪呢！</p>
+<h2 id="Question-6：我可以对这些代码进行封装或者优化吗？我可以做一些小应用吗？"><a href="#Question-6：我可以对这些代码进行封装或者优化吗？我可以做一些小应用吗？" class="headerlink" title="Question 6：我可以对这些代码进行封装或者优化吗？我可以做一些小应用吗？"></a>Question 6：我可以对这些代码进行封装或者优化吗？我可以做一些小应用吗？</h2><p>　　任何的知识想要活学活用都必须要经过自我优化并且不断应用从而达到熟能生巧的过程。如果仅仅局限于老师的例子代码，你将会发现自己解决问题的能力并不强，还只是处于粘贴拷贝的码农阶段。但是如果你能够思考这些代码怎么去封装和优化，并且自己试图做一些应用，那么恭喜你，你就在朝着架构师以及高级软件工程师的方向发展了。</p>
+<h2 id="Question-7：今天我的任务完成了吗？"><a href="#Question-7：今天我的任务完成了吗？" class="headerlink" title="Question 7：今天我的任务完成了吗？"></a>Question 7：今天我的任务完成了吗？</h2><p>　　“今日事，今日毕”。古人的这句话说明了执行力的重要性。所以，千万不要给自己任何拖延的理由。不要说，今天几个玩的很好的哥们邀我玩dota，今天的任务明天我一定做！如果这样的话，你会发现，第二天你已经生疏了第一天的知识。因为你没有复习也没有敲代码。你会感到更大的阻力去重新学习昨天的课程。这时候厌倦的情绪会大大的降低你的学习效果。所以，不要让任何事情阻碍你去完成你今天的任务。你需要明白，拖延不是选项，你甚至根本不要去考虑它。</p>
+<h2 id="Question-8：我有明确而有效的复习计划吗？"><a href="#Question-8：我有明确而有效的复习计划吗？" class="headerlink" title="Question 8：我有明确而有效的复习计划吗？"></a>Question 8：我有明确而有效的复习计划吗？</h2><p>　　孔子有句话，“温故而知新，可以为师矣”。见名知意，就是经常温习就可以学到新的东西，也就是熟能生巧。很多同学在学习后面知识的时候经常会抱怨以前的知识已经遗忘了。因而，当他们学习后面的知识时，就会感觉到非常的有压力，甚至产生了放弃学习的念头。这种心态会严重扼杀一个人的自信心并且学习效率极低。等到就业找工作的时候，这些同学会变得极度不自信。因为，他认为所有的知识在他心中越来越模糊。那么，好的措施就是制定明确有效的学习计划，定期复习将会使你保持对知识的熟悉程度。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 学习方法 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 学习方法 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[春雏集-流动的思绪]]></title>
+      <url>http://pjc.party/2017/03/05/%E6%98%A5%E9%9B%8F%E9%9B%86-%E6%B5%81%E5%8A%A8%E7%9A%84%E6%80%9D%E7%BB%AA/</url>
+      <content type="html"><![CDATA[<blockquote>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;所有的思绪被一场大雨冲刷的一干二净，窗花外的朦胧又梦幻般的世界，炫耀了莫名的姿色，五颜六色霓虹如五味杂陈般又塞满了整个空间。</p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp;车如流水马如龙，身如浮萍，难定踪迹。安静的车厢，闪烁的车灯，荧屏映衬着冷漠的脸，扶手也冷冷的释放着冷意，窗外的雨越发的朦胧，翻起的水雾遮拢了这个小城。</p>
+<p> &nbsp; &nbsp; &nbsp; &nbsp;从繁华到落幕，笔直的大道，到底掩含了多少如流水般如你我般在相似而又落寞的世界里禹禹独行。追寻着光明，却曾未被照耀。但还是，在黑夜中坚持的前进着，心中一直坚定的信念，曾未如此光明过，不断的放大放大，直到思绪飘离了这里，在苍穹之上，默默的俯视着光怪陆离的世界。我看到了街边行乞的流浪人，祈求着每一个路人，只为了一顿三餐；我看到了在公园里哭泣的小女孩，眼中充满的渴望和泪水，只是想得到关爱；我看到了吵架的情侣，相互指责着对方，可是他倆又是那么的相爱；我看到了，我看到了世界，我看到了平常未曾感知到的色彩，生活如此。</p>
+<p>  &nbsp; &nbsp; &nbsp; &nbsp;“我的心愿的是世界和平！”一句会被嘲笑的话，此刻却是那么有力，那么渴望。相互扮演着让着这个世界运行下去的角色，有时你会生出挫败的无力感，此刻些许能明白些所谓的“看破红尘，遁入空门”这般话语。追心而去，逐念而去，坚守本心。</p>
+<p> &nbsp; &nbsp; &nbsp;&nbsp;谁的思绪飞越了尽头，如流水般一去不返。</p>
+<p>  &nbsp; &nbsp; &nbsp; &nbsp;昨日而去，今日而追。心若有念，不曾有晚。</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;流动的思绪，翻腾的水雾，220照样在行驶，霓虹照样五味杂陈。<code>每一次行程，如洗礼般，净化污浊，保持自我的纯真和最初的信念。</code></p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;飘飞的思绪，随着耸动的人流下了车。我在窗外，看了看脚下的流水，却没了在窗内的思绪，笃定了思绪，默默前行。</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> 春雏集 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 春雏集 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[javaee上课笔记-Servlet事件监听器]]></title>
+      <url>http://pjc.party/2017/03/03/javaee%E4%B8%8A%E8%AF%BE%E7%AC%94%E8%AE%B0-Servlet%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC%E5%99%A8/</url>
+      <content type="html"><![CDATA[<h1 id="学习目标"><a href="#学习目标" class="headerlink" title="学习目标"></a>学习目标</h1><ul>
+<li>掌握监听器的相关API</li>
+<li>掌握监听器域对象中的属性变更</li>
+<li>掌握感知被HttpSession绑定的事件监听器</li>
+</ul>
+<h1 id="Servlet事件监听器概述"><a href="#Servlet事件监听器概述" class="headerlink" title="Servlet事件监听器概述"></a>Servlet事件监听器概述</h1><ul>
+<li>监听器组成：<br>1.事件（Event）：用户的一个操作，如单机一个按钮、调用一个方法、创建一个对象吗等<br>2.事件源：产生事件的对象<br>3.事件监听器（Listener）：负责监听发生在事件源上的事件。<br>4.事件处理器：监听器的成员方法，当事件发生的时候会触发的处理器（成员方法）</li>
+<li>事件监听器工作步骤<br>1.将监听器绑定到事件源，也就是注册监听器。<br>2.事件发生时会触发监听器的的成员方法，即事件的处理器，传递事件对象。<br>3.事件处理器通过事件 对象获得事件源，并对事件源进行处理。</li>
+<li>Servlet事件监听器根据监听事件的不同分为三类<br>1.用于监听域对象的创建和销毁的事件监听器（ServletContextListener 接口、HttpSessionListener 接口、ServletRequestListener 接口）。<br>2.用于监听域对象属性增加和删除的事件监听器（ServletContextAttributeListener 接口、HttpSessionAttributeListener 接口、ServletRequestAttributeListener 接口）<br>3.用于监听绑定到HttpSession域中某个对象状态的事件监听器（HttpSessionBindingListener接口、HttpsessionActivationListener 接口）</li>
+</ul>
+<h1 id="监听域对象的生命周期"><a href="#监听域对象的生命周期" class="headerlink" title="监听域对象的生命周期"></a>监听域对象的生命周期</h1><h2 id="ServletContextListener-接口"><a href="#ServletContextListener-接口" class="headerlink" title="ServletContextListener 接口"></a>ServletContextListener 接口</h2><p>  方法：</p>
+<ul>
+<li>contextInitalized（）方法<br><code>public void contextInitalized(ServletContextEvent sce)</code><br>当ServletContext 对象被创建时，web容器会调用该方法，传入ServletContextEvent类型参数，在方法内容通过该参数来获取 创建的ServletContext对象</li>
+<li>contextDestroyed（）方法<br><code>public vid contextDestroyed(ServletContextEvent sce)</code><br>内容描述差不多，就不写了<h2 id="HttpSessionListener-接口"><a href="#HttpSessionListener-接口" class="headerlink" title="HttpSessionListener 接口"></a>HttpSessionListener 接口</h2></li>
+<li>sessionCreated()方法<br><code>public vid sessionCreated（httpsessionEvent se）</code></li>
+<li>sessionDestroyed（）方法<br><code>public vid sessionDestroyed（）方法 se）</code><h2 id="ServletRequestListener-接口"><a href="#ServletRequestListener-接口" class="headerlink" title="ServletRequestListener 接口"></a>ServletRequestListener 接口</h2></li>
+<li>requestInitalized（）方法<br><code>public void requestInitalized(ServletRequestEvent sre)</code></li>
+<li><p>requestDestroyed方法<br><code>public void requestDestroyed(ServletRequestEvent sre)</code></p>
+<h2 id="案例-监听域对象的生命周期"><a href="#案例-监听域对象的生命周期" class="headerlink" title="案例-监听域对象的生命周期"></a>案例-监听域对象的生命周期</h2><p>对Servlet域对象的生命周期进行监听，首先要实现域对象相应的接口</p>
+<a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">package party.pjc.chapter05.listener;</div><div class="line">import javax.servlet.*;</div><div class="line">import javax.servlet.http.*;</div><div class="line">public class MyListener implements ServletContextListener,</div><div class="line"> HttpSessionListener, ServletRequestListener &#123;</div><div class="line">	public void contextInitialized(ServletContextEvent arg0) &#123;</div><div class="line">		System.out.println(&quot;ServletContext对象被创建了&quot;);</div><div class="line">	&#125;</div><div class="line">	public void contextDestroyed(ServletContextEvent arg0) &#123;</div><div class="line">		System.out.println(&quot;ServletContext对象被销毁了&quot;);</div><div class="line">	&#125;</div><div class="line">	public void requestInitialized(ServletRequestEvent arg0) &#123;</div><div class="line">		System.out.println(&quot;ServletRequest对象被创建了&quot;);</div><div class="line">	&#125;</div><div class="line">	public void requestDestroyed(ServletRequestEvent arg0) &#123;</div><div class="line">		System.out.println(&quot;ServletRequest对象被销毁了&quot;);</div><div class="line">	&#125;</div><div class="line">	public void sessionCreated(HttpSessionEvent arg0) &#123;</div><div class="line">		System.out.println(&quot;HttpSession对象被创建了&quot;);</div><div class="line">	&#125;</div><div class="line">	public void sessionDestroyed(HttpSessionEvent arg0) &#123;</div><div class="line">		System.out.println(&quot;HttpSession对象被销毁了&quot;);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>配置文件，部署Mylistener监听器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&lt;listener&gt;</div><div class="line">  &lt;listener-class&gt;</div><div class="line">    packagePath</div><div class="line">  &lt;/listener-class&gt;</div><div class="line">&lt;/listener&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="统计在线人数"><a href="#统计在线人数" class="headerlink" title="统计在线人数"></a>统计在线人数</h2><p>  贴上核心代码：<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">package party.pjc.chapter05.listener;</div><div class="line">import javax.servlet.*;</div><div class="line">import javax.servlet.http.*;</div><div class="line">public class CountListener implements HttpSessionListener &#123;</div><div class="line">	private int count = 0;// 用于统计在线人数</div><div class="line">	public void sessionCreated(HttpSessionEvent hse) &#123;</div><div class="line">		count++;// session对象创建时count变量加1</div><div class="line">		ServletContext context =</div><div class="line">         		hse.getSession().getServletContext();</div><div class="line">		context.setAttribute(&quot;count&quot;, new Integer(count));</div><div class="line">	&#125;</div><div class="line">	public void sessionDestroyed(HttpSessionEvent hse) &#123;</div><div class="line">		count--;// session对象销毁时count变量减1</div><div class="line">		ServletContext context =</div><div class="line">         		hse.getSession().getServletContext();</div><div class="line">		context.setAttribute(&quot;count&quot;, new Integer(count));</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h1 id="监听域对象中的属性变更"><a href="#监听域对象中的属性变更" class="headerlink" title="监听域对象中的属性变更"></a>监听域对象中的属性变更</h1><h2 id="监听对象属性变更的接口"><a href="#监听对象属性变更的接口" class="headerlink" title="监听对象属性变更的接口"></a>监听对象属性变更的接口</h2><ul>
+<li>attributeAdded（）方法<br><code>public void attributeAdded(ServletContextAttributeEvent scab)</code><br><code>public void attributeAdded(HttpSessionOnBindingEvent se)</code><br><code>public void attributeAdded(ServletRequestAttributeEvent srae)</code></li>
+<li>attributeRemove()方法<br><code>public void attributeRemove(ServletContextAttributeEvent scab)</code><br><code>public void attributeRemove(HttpSessionOnBindingEvent se)</code><br><code>public void attributeRemove(ServletRequestAttributeEvent srae)</code><h2 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h2></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div></pre></td><td class="code"><pre><div class="line">package party.pjc.chapter05.listener;</div><div class="line">import javax.servlet.*;</div><div class="line">import javax.servlet.http.*;</div><div class="line">public class MyAttributeListener implements</div><div class="line">ServletContextAttributeListener,HttpSessionAttributeListener,       </div><div class="line">ServletRequestAttributeListener &#123;</div><div class="line">	public void attributeAdded(ServletContextAttributeEvent sae) &#123;</div><div class="line">		String name = sae.getName();</div><div class="line">		System.out.println(&quot;ServletContext添加属性：&quot; + name + &quot;=&quot;</div><div class="line">				+ sae.getServletContext().getAttribute(name));</div><div class="line">	&#125;</div><div class="line">	public void attributeRemoved(ServletContextAttributeEvent sae)</div><div class="line">     &#123;</div><div class="line">		String name = sae.getName();</div><div class="line">		System.out.println(&quot;ServletContext移除属性: &quot; + name);</div><div class="line">	&#125;</div><div class="line">	public void attributeReplaced(ServletContextAttributeEvent sae)</div><div class="line">     &#123;</div><div class="line">		String name = sae.getName();</div><div class="line">		System.out.println(&quot;ServletContext替换属性：&quot; + name + &quot;=&quot;</div><div class="line">				+ sae.getServletContext().getAttribute(name));</div><div class="line">	&#125;</div><div class="line">	public void attributeAdded(HttpSessionBindingEvent hbe) &#123;</div><div class="line">		String name = hbe.getName();</div><div class="line">		System.out.println(&quot;HttpSession添加属性：&quot; + name + &quot;=&quot;</div><div class="line">				+ hbe.getSession().getAttribute(name));</div><div class="line">	&#125;</div><div class="line">	public void attributeRemoved(HttpSessionBindingEvent hbe) &#123;</div><div class="line">		String name = hbe.getName();</div><div class="line">		System.out.println(&quot;HttpSession移除属性: &quot; + name);</div><div class="line">	&#125;</div><div class="line">	public void attributeReplaced(HttpSessionBindingEvent hbe) &#123;</div><div class="line">		String name = hbe.getName();</div><div class="line">		System.out.println(&quot;HttpSession替换属性：&quot; + name + &quot;=&quot;</div><div class="line">				+ hbe.getSession().getAttribute(name));</div><div class="line">	&#125;</div><div class="line">	public void attributeAdded(ServletRequestAttributeEvent sra) &#123;</div><div class="line">		String name = sra.getName();</div><div class="line">		System.out.println(&quot;ServletRequest添加属性：&quot; + name + &quot;=&quot;</div><div class="line">				+ sra.getServletRequest().getAttribute(name));</div><div class="line">	&#125;</div><div class="line">	public void attributeRemoved(ServletRequestAttributeEvent sra)</div><div class="line">    &#123;</div><div class="line">		String name = sra.getName();</div><div class="line">		System.out.println(&quot;ServletRequest移除属性: &quot; + name);</div><div class="line">	&#125;</div><div class="line">	public void attributeReplaced(ServletRequestAttributeEvent sra)</div><div class="line">    &#123;</div><div class="line">		String name = sra.getName();</div><div class="line">		System.out.println(&quot;ServletRequest替换属性：&quot; + name + &quot;=&quot;</div><div class="line">				+ sra.getServletRequest().getAttribute(name));</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>别忘了在web.xml下配置</p>
+<h1 id="感知被HttpSession绑定的事件监听器"><a href="#感知被HttpSession绑定的事件监听器" class="headerlink" title="感知被HttpSession绑定的事件监听器"></a>感知被HttpSession绑定的事件监听器</h1><h2 id="HttpSessionBindingListener-接口"><a href="#HttpSessionBindingListener-接口" class="headerlink" title="HttpSessionBindingListener 接口"></a>HttpSessionBindingListener 接口</h2><ul>
+<li>valueBound（）方法<br><code>public void valueBound(HttpSessionBindingEvent event)</code></li>
+<li>valueUnBound()方法<br><code>public void valueUnbound(HttpSessionBindingEvent event)</code></li>
+</ul>
+<h2 id="统计登录用户"><a href="#统计登录用户" class="headerlink" title="统计登录用户"></a>统计登录用户</h2>]]></content>
+      
+        <categories>
+            
+            <category> javaee笔记 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> javaee笔记 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[春雏集：看见花落也凋零]]></title>
+      <url>http://pjc.party/2017/03/01/%E6%98%A5%E9%9B%8F%E9%9B%86%EF%BC%9A%E7%9C%8B%E8%A7%81%E8%8A%B1%E8%90%BD%E4%B9%9F%E5%87%8B%E9%9B%B6/</url>
+      <content type="html"><![CDATA[<h1 id="春雏集：看见花落也凋零"><a href="#春雏集：看见花落也凋零" class="headerlink" title="春雏集：看见花落也凋零"></a>春雏集：看见花落也凋零</h1><blockquote>
+<p>看见花落也凋零。</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> 春雏集 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 春雏集 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[javaee上课笔记:DBUtils工具]]></title>
+      <url>http://pjc.party/2017/03/01/javaee%E4%B8%8A%E8%AF%BE%E7%AC%94%E8%AE%B0-DBUtils%E5%B7%A5%E5%85%B7/</url>
+      <content type="html"><![CDATA[<h1 id="javaee上课笔记-DBUtils工具"><a href="#javaee上课笔记-DBUtils工具" class="headerlink" title="javaee上课笔记:DBUtils工具"></a>javaee上课笔记:DBUtils工具</h1><h1 id="学习目标"><a href="#学习目标" class="headerlink" title="学习目标"></a>学习目标</h1><ul>
+<li>了解DBUtils工具中的api</li>
+<li>学会使用DBUtils工具对数据库进行增删改查的操作</li>
+<li>学会使用DBUtils工具处理事务<br><a href="http://commons.apache.org/dbutils/index.html" target="_blank" rel="external">点我下载DBUtils</a></li>
+</ul>
+<h1 id="API介绍"><a href="#API介绍" class="headerlink" title="API介绍"></a>API介绍</h1><h2 id="核心类-amp-接口"><a href="#核心类-amp-接口" class="headerlink" title="核心类 &amp; 接口"></a>核心类 &amp; 接口</h2><blockquote>
+<p>类<br>  <code>org.apache.commons.dbutils.DbUtils</code><br>  <code>org.apache.commons.dbutils.QueryRunner</code></p>
+<p>接口<br>  <code>org.apache.commons.dbutils.ResultSetHandler</code></p>
+</blockquote>
+<h2 id="DBUtils-类"><a href="#DBUtils-类" class="headerlink" title="DBUtils 类"></a>DBUtils 类</h2><p>  DBUtils类 主要为如何关闭，装载JDBC驱动程序之类的常规工作提供方法，它提供的方法都是静态方法，</p>
+<ul>
+<li><p>1.close() 方法<br>关闭数据库连接</p>
+</li>
+<li><p>2.closeQuietly(Connection con,Statement stmt,ResultSet rs) 方法<br>该方法用来关闭Connection，Statement和ResultSet对象。<br>还会隐藏一些在程序中抛出的sql异常</p>
+</li>
+<li><p>3.commitAndCloseQuiely(Connection con)<br>该方法用来提交连接，然后关闭连接， 且在关闭时不抛出sql异常</p>
+</li>
+<li><p>4.LoadDrive（java.lang.String driverClassName）<br>该方法用于装载jdbc驱动程序，如果成功返回true。<br>使用时，不需要捕捉ClassNotFoundException异常</p>
+<a id="more"></a>
+<h2 id="QueryRunner-类"><a href="#QueryRunner-类" class="headerlink" title="QueryRunner 类"></a>QueryRunner 类</h2><p>该类简化了执行sql语句的代码，它与ResultSetHandler 组合在一起，能完成大部分的数据库操作，大大减少编码量。<br>提供了两个构造方法：<br>1.默认的构造方法<br>2.需要javax.sql.DataSource 作为参数</p>
+<ul>
+<li>1.query(Connection conn,String sql,ResultSetHandler rsh,Object[] params) 方法<br>该方法用于执行查询操作参数params表示一个对象数组，该数组中每个元素都被用来作为查询语句的置换参数<br>注意：该方法会自动处理PrepareSatement 和 ResultSet的创建和关闭</li>
+<li>2.query(String sql,ResultSetHandler rsh,Object[] params)方法<br>该方法用于执行查询操作，与第一个方法相比它不需要传递Connection对象给方法，它可以从提供给构造方法的数据源DateSource或使用setDateSource()中获得连接。</li>
+<li>3.query(Connection conn，String sql,ResultSetHandler rsh)方法<br>该方法用于执一个不需要置换参数的查询操作</li>
+<li>4.update(Connection conn，String sql,Object[] params)方法<br>该方法用来执行插入、更新或者删除操作，其中，参数params 表示SQL语句中的置换参数。</li>
+<li>5.update(Connection conn,String sql) 方法<br>该方法用于执行插入、更新或者删操作，它需要置换参数操作。</li>
+</ul>
+</li>
+</ul>
+<p>##　ResultSetHandler 接口<br>    该接口用于处理ResultSet结果集，它可以将结果集中的数据转化为不同的形式。根据结果集中数据类型的不同，ResultHandler提供了不同的实现类。如下：</p>
+<ul>
+<li>1.AbstractKeyedHandler:该类为抽象类，能够把结果集里面的数据转换为用Map存储。</li>
+<li>2.AbstractListHandler：该类为抽象类，—如上—-转换为用List存储。</li>
+<li>3.ArrayHandler：把结果集中的第一行数据转成数据对象数组</li>
+<li>4.ArrayListHandler：把结果集中的每一行数据转成一个对象数组，再将数组存放到List中。</li>
+<li>5.BaseResultSetHandler：把结果集转换成其他对象的扩展。</li>
+<li>6.BeanHandler :将结果集中的第一行数据封到一个对应的JavaBean实例中。</li>
+<li>7.BeanListHandler：将结果集中的每一行数据都封装到一个对应的 JavaBean实例中，存放到list中</li>
+<li>8.BeanMapHandler：结果集中的每一行数据都封装到一个对应的 JavaBean实例中，然后在根据指定的key把每个JavaBean在存放到一个Map里</li>
+<li>9.ColumnListHandler：将结果集中某一列的数据存放到List中</li>
+<li>10.将结果集中的每一行数据封装到一个map里，然后在根据指定的key把每个MAp在存放到一个map里。</li>
+<li>11.MapHandler：将结集中的每一行数据封装到一个map里。可以是列名，value是对应的值。</li>
+<li>12.MapListHandler：将结果集中的每一行数据封装到一个Map中，然后在存放到list中</li>
+<li><p>13.ScalarHandler：将结果集中的某一条记录的其中某一列的数据存储成Object对象</p>
+<p>另外，在ResultSetHandler接口中，提供了一个单独的方法handle（java.sql.ResultSet rs）,如果上述实现类没有提供想要的功能，可以通过自定义一个实现ResultSetHandler接口的类，然后重写handel()方法，实现结果集的处理。</p>
+<h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><h3 id="ArrayHandler-和-ArrayListHandler"><a href="#ArrayHandler-和-ArrayListHandler" class="headerlink" title="ArrayHandler 和 ArrayListHandler"></a>ArrayHandler 和 ArrayListHandler</h3></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">public static void testArrayHandler() throws SQLException&#123;</div><div class="line"></div><div class="line">		BaseDao beseDao = new BaseDao();</div><div class="line">		String sql = &quot;select * from NEWSINFO where nid=?&quot;;</div><div class="line">		Object[] arr = (Object[]) BaseDao.query(sql, new ArrayHandler(), new Object[]&#123;50&#125;);</div><div class="line">		for(int i=0;i&lt;arr.length;i++)&#123;</div><div class="line">			System.out.println(arr[i]+&quot;,&quot;);</div><div class="line">		&#125;</div></pre></td></tr></table></figure>
+<h3 id="实现步骤"><a href="#实现步骤" class="headerlink" title="实现步骤"></a>实现步骤</h3><p>  1.创建QueryRunner对象 （配置了C3p0数据池，参数获取数据源）<br>  <code>QueryRunner runner = new QueryRunner（C3p0Utils.getDateSource（））</code><br>  2.编写Sql语句<br>  <code>String sql = &quot;&quot;</code><br>  3.调用QueryRunner中的方法<br>  <code>runner.query()</code><br>  <code>runner.update()</code><br>  参数参考上面</p>
+<h1 id="DBUtils-处理事务"><a href="#DBUtils-处理事务" class="headerlink" title="DBUtils 处理事务"></a>DBUtils 处理事务</h1><p>  创建JDBCUtils,该类封装了创建连接，开启事务，关闭事务等方法<br>  需要注意的是，请求中的一个事务涉及到了多个数据库操作，如果这些Connection是<br>  从连接池中获取的，两个DAO操作就用到了两个Connection，这样是没办法完成一个事务的，<br>  所以，需要借助ThreadLoacl类。<br>  ThreadLoacl类的作用是在一个线程里记录变量。可以生成一个连接放在这个线程中，<br>  只要是这个线程中的任何对象都可以共享这个连接，当线程结束后就删除这个连接，这样，<br>  就保证了一个事务，一个连接。直接上代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div></pre></td><td class="code"><pre><div class="line">package party.lvc.jdbc.utils;</div><div class="line">import java.sql.Connection;</div><div class="line">import java.sql.SQLException;</div><div class="line">import javax.sql.DataSource;</div><div class="line">import com.mchange.v2.c3p0.ComboPooledDataSource;</div><div class="line">public class JDBCUtils &#123;</div><div class="line">	// 创建一个ThreadLocal 对象，以当前线程作为key</div><div class="line">	private static ThreadLocal&lt;Connection&gt; threadLocal =</div><div class="line">             new ThreadLocal&lt;Connection&gt;();</div><div class="line">	// 从c3p0-config.xml配置文件中读取默认的数据库配置，生成c3p0数据源</div><div class="line">	private static DataSource ds = new ComboPooledDataSource();</div><div class="line">	// 返回数据源对象</div><div class="line">	public static DataSource getDataSource() &#123;</div><div class="line">		return ds;</div><div class="line">	&#125;</div><div class="line">	// 获取c3p0数据库连接池中的连接对象</div><div class="line">	public static Connection getConnection() throws SQLException &#123;</div><div class="line">		Connection conn = threadLocal.get();</div><div class="line">		if (conn == null) &#123;</div><div class="line">			conn = ds.getConnection();</div><div class="line">			threadLocal.set(conn);</div><div class="line">		&#125;</div><div class="line">		return conn;</div><div class="line">	&#125;</div><div class="line">	// 开启事务</div><div class="line">	public static void startTransaction() &#123;</div><div class="line">		try &#123;</div><div class="line">			// 获得链接</div><div class="line">			Connection conn = getConnection();</div><div class="line">			// 开启事务</div><div class="line">			conn.setAutoCommit(false);</div><div class="line">		&#125; catch (SQLException e) &#123;</div><div class="line">			e.printStackTrace();</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	// 提交事务</div><div class="line">	public static void commit() &#123;</div><div class="line">		try &#123;</div><div class="line">			// 获得链接</div><div class="line">			Connection conn = threadLocal.get();</div><div class="line">			// 提交事务</div><div class="line">			if (conn != null)</div><div class="line">				conn.commit();</div><div class="line">		&#125; catch (SQLException e) &#123;</div><div class="line">			e.printStackTrace();</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	// 回滚事务</div><div class="line">	public static void rollback() &#123;</div><div class="line">		try &#123;</div><div class="line">			// 获得链接</div><div class="line">			Connection conn = threadLocal.get();</div><div class="line">			// 回滚事务</div><div class="line">			if (conn != null)</div><div class="line">				conn.rollback();</div><div class="line">		&#125; catch (SQLException e) &#123;</div><div class="line">			e.printStackTrace();</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	// 关闭数据库连接，释放资源</div><div class="line">	public static void close() &#123;</div><div class="line">		// 获得链接</div><div class="line">		Connection conn = threadLocal.get();</div><div class="line">		// 关闭事务</div><div class="line">		if (conn != null) &#123;</div><div class="line">			try &#123;</div><div class="line">				conn.close();</div><div class="line">			&#125; catch (SQLException e) &#123;</div><div class="line">				e.printStackTrace();</div><div class="line">			&#125; finally &#123;</div><div class="line">				// 从集合中移除当前绑定的连接</div><div class="line">				threadLocal.remove();</div><div class="line">				conn = null;</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>事务的实现。通过银行转账业务，来举个栗子。<br>创建Business，该类包括了转账过程的逻辑方法。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line">package party.lvc.example;</div><div class="line">import java.sql.SQLException;</div><div class="line">import cn.itcast.jdbc.example.dao.AccountDao;</div><div class="line">import cn.itcast.jdbc.example.domain.Account;</div><div class="line">import cn.itcast.jdbc.utils.JDBCUtils;</div><div class="line">public class Business &#123;</div><div class="line">	public static void transfer(String sourceAccountName,</div><div class="line">                 String toAccountName,  float money) &#123;</div><div class="line">		try &#123;</div><div class="line">			// 开启事务</div><div class="line">			JDBCUtils.startTransaction();</div><div class="line">			// 根据用户名查询数据并存入实体类对象中</div><div class="line">			AccountDao dao = new AccountDao();</div><div class="line">			Account accountfrom = dao.find(sourceAccountName);</div><div class="line">			Account accountto = dao.find(toAccountName);</div><div class="line">			// 完成转账操作</div><div class="line">			if(money&lt;accountfrom.getMoney())&#123;</div><div class="line">				accountfrom.setMoney(accountfrom.getMoney()-money);</div><div class="line">			&#125;else&#123;</div><div class="line">				System.out.println(&quot;转出账户余额不足&quot;);</div><div class="line">			&#125;		</div><div class="line">			accountto.setMoney(accountto.getMoney()+money);</div><div class="line">			dao.update(accountfrom);</div><div class="line">			dao.update(accountto);</div><div class="line">			// 提交事务</div><div class="line">			JDBCUtils.commit();</div><div class="line">			System.out.println(&quot;提交成功&quot;);</div><div class="line">		&#125; catch (SQLException e) &#123;</div><div class="line">			System.out.println(&quot;提交失败&quot;);</div><div class="line">			JDBCUtils.rollback();</div><div class="line">			e.printStackTrace();</div><div class="line">		&#125; finally &#123;</div><div class="line">			// 关闭事务</div><div class="line">			JDBCUtils.close();</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	public static void main(String[] args) throws SQLException &#123;</div><div class="line">		// 调用方法，实现a向b转账200元操作</div><div class="line">		transfer(&quot;a&quot;, &quot;b&quot;, 200);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+]]></content>
+      
+        <categories>
+            
+            <category> javaee笔记 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> javaee笔记 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Android上课笔记-快速入门]]></title>
+      <url>http://pjc.party/2017/02/25/Android%E4%B8%8A%E8%AF%BE%E7%AC%94%E8%AE%B0-%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8/</url>
+      <content type="html"><![CDATA[<h1 id="Android项目的目录结构"><a href="#Android项目的目录结构" class="headerlink" title="Android项目的目录结构"></a>Android项目的目录结构</h1><ul>
+<li>Activity：应用被打开时显示的界面</li>
+<li>src：项目代码</li>
+<li>R.java：项目中所有资源文件的资源id</li>
+<li>Android.jar：Android的jar包，导入此包方可使用Android的api</li>
+<li>libs：导入第三方jar包</li>
+<li>assets：存放资源文件，比方说mp3、视频文件</li>
+<li>bin：存放编译打包后的文件</li>
+<li>res：存放资源文件，存放在此文件夹下的所有资源文件都会生成资源id</li>
+<li>drawable：存放图片资源</li>
+<li>layout：存放布局文件，把布局文件通过资源id指定给activity，界面就会显示出该布局文件定义的布局</li>
+<li>menu：定义菜单的样式</li>
+<li>Strings.xml：存放字符串资源，每个资源都会有一个资源id</li>
+</ul>
+<h2 id="Android的配置文件（清单文件）"><a href="#Android的配置文件（清单文件）" class="headerlink" title="Android的配置文件（清单文件）"></a>Android的配置文件（清单文件）</h2><ul>
+<li><p>指定应用的包名</p>
+<blockquote>
+<p>package=”com.itheima.helloworld”<br>data/data/com.itheima.helloworld(上面代码指定的包名)<br>应用生成的文件都会存放在此路径下</p>
+</blockquote>
+</li>
+<li><p>Android的四大组件在使用前全部需要在清单文件中配置</p>
+</li>
+<li>的配置对整个应用生效</li>
+<li>的配置对该activity生效<h1 id="DDMS"><a href="#DDMS" class="headerlink" title="DDMS"></a>DDMS</h1></li>
+<li>Dalvik debug monitor service</li>
+<li>Dalvik调试监控服务</li>
+</ul>
+<a id="more"></a>
+<h1 id="常用的adb指令"><a href="#常用的adb指令" class="headerlink" title="常用的adb指令"></a>常用的adb指令</h1><h2 id="Android-debug-bridge：安卓调试桥"><a href="#Android-debug-bridge：安卓调试桥" class="headerlink" title="Android debug bridge：安卓调试桥"></a>Android debug bridge：安卓调试桥</h2><ul>
+<li>adb start-server:启动adb进程</li>
+<li>adb kill-server：杀死adb进程</li>
+<li>adb devices：查看当前与开发环境连接的设备，此命令也可以启动adb进程</li>
+<li>adb install XXX.apk：往模拟器安装apk</li>
+<li>adb uninstall 包名：删除模拟器中的应用</li>
+<li>adb shell:进入linux命令行</li>
+<li>ps：查看运行进程</li>
+<li>ls：查看当前目录下的文件结构</li>
+<li>netstat -ano：查看占用端口的进程<h1 id="电话拨号器"><a href="#电话拨号器" class="headerlink" title="电话拨号器"></a>电话拨号器</h1><blockquote>
+<p>功能：用户输入一个号码，点击拨打按钮，启动系统打电话的应用把号码拨打出去</p>
+<h2 id="1-定义布局"><a href="#1-定义布局" class="headerlink" title="1. 定义布局"></a>1. 定义布局</h2></blockquote>
+</li>
+</ul>
+<ul>
+<li><p>组件必须设置宽高，否则不能通过编译</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">android:layout_width=&quot;wrap_content&quot;</div><div class="line">android:layout_height=&quot;wrap_content&quot;</div></pre></td></tr></table></figure>
+</li>
+<li><p>如果要在java代码中操作某个组件，则组件需要设置id，这样才能在代码中通过id拿到这个组件</p>
+</li>
+</ul>
+<p><code>android:id=&quot;@+id/et_phone&quot;</code></p>
+<h2 id="2-给按钮设置点击侦听"><a href="#2-给按钮设置点击侦听" class="headerlink" title="2. 给按钮设置点击侦听"></a>2. 给按钮设置点击侦听</h2><ul>
+<li>给按钮设置侦听<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"> //通过id拿到按钮对象</div><div class="line">Button bt_call = (Button) findViewById(R.id.bt_call);</div><div class="line">//给按钮设置点击</div><div class="line">bt_call.setOnClickListener(new MyListener());</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="3-得到用户输入的号码"><a href="#3-得到用户输入的号码" class="headerlink" title="3. 得到用户输入的号码"></a>3. 得到用户输入的号码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">//得到用户输入的号码，先拿到输入框组件</div><div class="line">EditText et_phone = (EditText) findViewById(R.id.et_phone);</div><div class="line">String phone = et_phone.getText().toString();</div></pre></td></tr></table></figure>
+<h2 id="4-把号码打出去"><a href="#4-把号码打出去" class="headerlink" title="4. 把号码打出去"></a>4. 把号码打出去</h2><ul>
+<li>Android系统中基于动作机制，来调用系统的应用，你告诉系统你想做什么动作，系统就会把能做这个动作的应用给你，如果没有这个应用，会抛异常</li>
+<li>设置动作，通过意图告知系统<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">//把号码打出去</div><div class="line">    //先创建一个意图对象</div><div class="line">    Intent intent = new Intent();</div><div class="line">    //设置动作，打电话</div><div class="line">    intent.setAction(Intent.ACTION_CALL);</div><div class="line">    intent.setData(Uri.parse(&quot;tel:&quot; + phone));</div><div class="line">    //把意图告诉系统</div><div class="line">    startActivity(intent);</div></pre></td></tr></table></figure></li>
+<li>添加权限</li>
+</ul>
+<p><code>&lt;uses-permission android:name=&quot;android.permission.CALL_PHONE&quot;/&gt;</code></p>
+<h1 id="点击事件的四种写法"><a href="#点击事件的四种写法" class="headerlink" title="点击事件的四种写法"></a>点击事件的四种写法</h1><h2 id="第一种"><a href="#第一种" class="headerlink" title="第一种"></a>第一种</h2><ul>
+<li>定义一个MyListener实现onClickListener接口</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Button bt1 = (Button) findViewById(R.id.bt1);</div><div class="line">bt1.setOnClickListener(new MyListener());</div></pre></td></tr></table></figure>
+<h2 id="第二种"><a href="#第二种" class="headerlink" title="第二种"></a>第二种</h2><ul>
+<li>定义一个匿名内部类实现onClickListener接口</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">Button bt2 = (Button) findViewById(R.id.bt2);</div><div class="line">bt2.setOnClickListener(new OnClickListener() &#123;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public void onClick(View v) &#123;</div><div class="line">        System.out.println(&quot;第二种&quot;);</div><div class="line"></div><div class="line">    &#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<h2 id="第三种"><a href="#第三种" class="headerlink" title="第三种"></a>第三种</h2><ul>
+<li>让当前activity实现onClickListener接口</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">Button bt3 = (Button) findViewById(R.id.bt3);</div><div class="line">bt3.setOnClickListener(this);</div></pre></td></tr></table></figure>
+<h2 id="第四种"><a href="#第四种" class="headerlink" title="第四种"></a>第四种</h2><ul>
+<li><p>给Button节点设置onClick属性，</p>
+<p><code>android:onClick=&quot;click&quot;</code></p>
+</li>
+<li><p>然后在activity中定义跟该属性值同名的方法</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">public void click(View v)&#123;</div><div class="line">    System.out.println(&quot;第四种&quot;);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h1 id="短信发送器"><a href="#短信发送器" class="headerlink" title="短信发送器"></a>短信发送器</h1><blockquote>
+<p>功能：用户输入号码和短信内容，点击发送按钮，调用短信api把短信发送给指定号码</p>
+<h1 id="1-定义布局-1"><a href="#1-定义布局-1" class="headerlink" title="1. 定义布局"></a>1. 定义布局</h1></blockquote>
+<ul>
+<li>输入框的提示<br><code>android:hint=&quot;请输入号码&quot;</code>  </li>
+</ul>
+<h2 id="2-完成点击事件"><a href="#2-完成点击事件" class="headerlink" title="2. 完成点击事件"></a>2. 完成点击事件</h2><ul>
+<li>先给Button组件设置onClick属性<br><code>onClick=&quot;send&quot;</code></li>
+<li>在Activity中定义此方法<br><code>public void send(View v){}</code></li>
+</ul>
+<h2 id="3-获取到用户输入的号码和内容"><a href="#3-获取到用户输入的号码和内容" class="headerlink" title="3. 获取到用户输入的号码和内容"></a>3. 获取到用户输入的号码和内容</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">EditText et_phone = (EditText) findViewById(R.id.et_phone);</div><div class="line">EditText et_content = (EditText) findViewById(R.id.et_content);</div><div class="line">String phone = et_phone.getText().toString();</div><div class="line">String content = et_content.getText().toString();</div></pre></td></tr></table></figure>
+<h2 id="4-调用发送短信的api"><a href="#4-调用发送短信的api" class="headerlink" title="4. 调用发送短信的api"></a>4. 调用发送短信的api</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">//调用发送短信的api</div><div class="line">SmsManager sm = SmsManager.getDefault();</div><div class="line"></div><div class="line">//发送短信</div><div class="line">sm.sendTextMessage(phone, null, content, null, null);</div></pre></td></tr></table></figure>
+<ul>
+<li><p>添加权限</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;uses-permission android:name=&quot;android.permission.SEND_SMS&quot;/&gt;</div></pre></td></tr></table></figure>
+</li>
+<li><p>如果短信过长，需要拆分<br><code>List&lt;String&gt; smss = sm.divideMessage(content);</code></p>
+</li>
+</ul>
+]]></content>
+      
+        <categories>
+            
+            <category> Android笔记 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> android </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[android笔记-Drawable]]></title>
+      <url>http://pjc.party/2017/02/24/android%E7%AC%94%E8%AE%B0-Drawable/</url>
+      <content type="html"><![CDATA[<h1 id="Android-的-Drawable"><a href="#Android-的-Drawable" class="headerlink" title="Android 的 Drawable"></a>Android 的 Drawable</h1><p>  Drawable 表示的是一中可以在Canvas上进行绘制的抽象概念，它的种类很多，最常见的颜色和<br>  图片度可以是一个Drawable。<br>  Drawable一般都是通过XML定义的，也可以使用代码来创建。</p>
+<h1 id="Drawable的分类"><a href="#Drawable的分类" class="headerlink" title="Drawable的分类"></a>Drawable的分类</h1><h2 id="BitmapDrawable"><a href="#BitmapDrawable" class="headerlink" title="BitmapDrawable"></a>BitmapDrawable</h2><p>  几乎是是最简单的Drawable，它就是表示一张图片。<br>  xml文件，<bitmap></bitmap></p>
+<h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">android:antialias		抗锯齿            </div><div class="line">android:dither		  抖动效果        </div><div class="line">android:filter		  过滤效果</div><div class="line">android:gravity		  对图片进行定位，当图片小于容器时。</div><div class="line">android:mipMap	     </div><div class="line">android:src		      </div><div class="line">android:tileMode		平铺模式          disabled 、clamp、reapt 、mirror</div><div class="line">android:tileModeX</div><div class="line">android:tileModeY</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="ShapeDrawable"><a href="#ShapeDrawable" class="headerlink" title="ShapeDrawable"></a>ShapeDrawable</h2><blockquote>
+<p>形状的Drawable咯,定义基本的几何图形,如(矩形,圆形,线条等),根元素是<shape..> 节点比较多，相关的节点如下：</shape..></p>
+<ul>
+<li>① shape:</li>
+<li>~ visible:设置是否可见</li>
+<li>~ shape:形状,可选:rectangle(矩形,包括正方形),oval(椭圆,包括圆),line(线段),ring(环形)</li>
+<li>~ innerRadiusRatio:当shape为ring才有效,表示环内半径所占半径的比率,如果设置了innerRadius, 他会被忽略</li>
+<li>~ innerRadius:当shape为ring才有效,表示环的内半径的尺寸</li>
+<li>~ thicknessRatio:当shape为ring才有效,表环厚度占半径的比率</li>
+<li>~ thickness:当shape为ring才有效,表示环的厚度,即外半径与内半径的差</li>
+<li>~ useLevel:当shape为ring才有效,表示是否允许根据level来显示环的一部分</li>
+<li>② size</li>
+<li>~ width:图形形状宽度</li>
+<li>~ height:图形形状高度</li>
+<li>③ &lt;gradient 》 后面GradientDrawable再讲~</li>
+<li>④ solid</li>
+<li>~ color:背景填充色,设置solid后会覆盖gradient设置的所有效果!!!!!!</li>
+<li>⑤ stroke</li>
+<li>~ width:边框的宽度</li>
+<li>~ color:边框的颜色</li>
+<li>~ dashWidth:边框虚线段的长度</li>
+<li>~ dashGap:边框的虚线段的间距</li>
+<li>⑥ conner</li>
+<li>~ radius:圆角半径,适用于上下左右四个角</li>
+<li>~ topLeftRadius,topRightRadius,BottomLeftRadius,tBottomRightRadius: 依次是左上,右上,左下,右下的圆角值,按自己需要设置!</li>
+<li>⑦ padding</li>
+<li>left,top,right,bottm:依次是左上右下方向上的边距!</li>
+</ul>
+</blockquote>
+<h2 id="LayerDrawable"><a href="#LayerDrawable" class="headerlink" title="LayerDrawable"></a>LayerDrawable</h2><h2 id="StateListDrawable"><a href="#StateListDrawable" class="headerlink" title="StateListDrawable"></a>StateListDrawable</h2><p>属性：</p>
+<ul>
+<li>drawable:引用的Drawable位图,我们可以把他放到最前面,就表示组件的正常状态~</li>
+<li>state_focused:是否获得焦点</li>
+<li>state_window_focused:是否获得窗口焦点</li>
+<li>state_enabled:控件是否可用</li>
+<li>state_checkable:控件可否被勾选,eg:checkbox</li>
+<li>state_checked:控件是否被勾选</li>
+<li>state_selected:控件是否被选择,针对有滚轮的情况</li>
+<li>state_pressed:控件是否被按下</li>
+<li>state_active:控件是否处于活动状态,eg:slidingTab</li>
+<li>state_single:控件包含多个子控件时,确定是否只显示一个子控件</li>
+<li>state_first:控件包含多个子控件时,确定第一个子控件是否处于显示状态</li>
+<li>state_middle:控件包含多个子控件时,确定中间一个子控件是否处于显示状态</li>
+<li>state_last:控件包含多个子控件时,确定最后一个子控件是否处于显示状态</li>
+</ul>
+<h2 id="LeveListDrawable"><a href="#LeveListDrawable" class="headerlink" title="LeveListDrawable"></a>LeveListDrawable</h2><h2 id="TransitionDrawablw"><a href="#TransitionDrawablw" class="headerlink" title="TransitionDrawablw"></a>TransitionDrawablw</h2><h2 id="InsetDrawable"><a href="#InsetDrawable" class="headerlink" title="InsetDrawable"></a>InsetDrawable</h2><h2 id="ScaleDrawable"><a href="#ScaleDrawable" class="headerlink" title="ScaleDrawable"></a>ScaleDrawable</h2><h2 id="clipDrawable"><a href="#clipDrawable" class="headerlink" title="clipDrawable"></a>clipDrawable</h2><h1 id="自定义Drawable"><a href="#自定义Drawable" class="headerlink" title="自定义Drawable"></a>自定义Drawable</h1>]]></content>
+      
+        <categories>
+            
+            <category> android </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> android </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[春雏集:优雅的活着]]></title>
+      <url>http://pjc.party/2017/02/22/%E6%98%A5%E9%9B%8F%E9%9B%86-%E4%BC%98%E9%9B%85%E7%9A%84%E6%B4%BB%E7%9D%80/</url>
+      <content type="html"><![CDATA[<h1 id="春雏集-优雅的活着"><a href="#春雏集-优雅的活着" class="headerlink" title="春雏集:优雅的活着"></a>春雏集:优雅的活着</h1><blockquote>
+<p>我和丽丽有相同的观点就是，优雅的活着</p>
+</blockquote>
+<p>每天一句早安，<br>每天一句晚安，<br>相逢总是思念。</p>
+<p>她想优雅的活着，<br>我想优雅的陪她，<br>陪伴每个366天，<br>多一天都是值得。</p>
+<p>那一天，<br>在回寝室的路上，<br>抬头看落叶的飘零，<br>不知为何，又想起了<br>优雅的活着，<br>优雅的生活，<br>心中的那个念头，牵扯了感触。</p>
+<p>今天给她分享了，<br>李宗盛的《山丘》，<br>她说，看不懂。<br>其实很简单，<br>我想，<br>越过每一个山丘，<br>然后陪你。</p>
+<p>越发想念的越是醉人的，<br>迷蒙的夜色神游的我俩。</p>
+<p>晚安，亲爱的丽丽!<br>我想陪你，过优雅的日子。</p>
+<blockquote>
+<p>我希望有个如你一般的人<br>如山间清爽的风<br>如古城温暖的光<br>从清晨到夜晚<br>由山野到书房<br>只要最后是你<br>就好<br>           ——张嘉佳 《从你的全世界路过》</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> 春雏集 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 感悟 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Android笔记-第一课]]></title>
+      <url>http://pjc.party/2017/02/20/Android%E4%B8%8A%E8%AF%BE%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E8%AF%BE/</url>
+      <content type="html"><![CDATA[<h1 id="Android-简介"><a href="#Android-简介" class="headerlink" title="Android 简介"></a>Android 简介</h1><ul>
+<li>通信技术</li>
+<li>Android 起源</li>
+<li>Android 体系架构</li>
+<li><p>Dalvik 虚拟机<br>Dalvik 包含了一整套的Android运行环境虚拟机，每个app都会分配Dalvik虚拟机来保证相互之间不收干扰，<br>并不保持独立。它的特点是在运行时编译。</p>
+<p>ART采用的是安装时就进行编译。</p>
+</li>
+</ul>
+<blockquote>
+<p>克服瓶颈期的最好办好就是六个字–总结 、归纳、演绎。</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> Android笔记 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Android </tag>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[javaweb实战：网上书城]]></title>
+      <url>http://pjc.party/2017/02/20/javaweb%E5%AE%9E%E6%88%98%EF%BC%9A%E7%BD%91%E4%B8%8A%E4%B9%A6%E5%9F%8E/</url>
+      <content type="html"><![CDATA[<h1 id="javawe实战：网上书城-前台"><a href="#javawe实战：网上书城-前台" class="headerlink" title="javawe实战：网上书城  前台"></a>javawe实战：网上书城  前台</h1><h2 id="项目概述"><a href="#项目概述" class="headerlink" title="项目概述"></a>项目概述</h2><h3 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h3><blockquote>
+<p> 1.统一友好的操作界面，具有良好的用户体验。<br>  2.商品分类详尽，可按不同类别查看商品信息。<br>  3.公告栏，本周热卖。<br>  4.网站首页轮播图满足图书广告的需要。<br>  5.用户信息的注册和验证。<br>  6.通过图书名模糊搜索相关商品。<br>  7.通过购物车一次购买多件商品。<br>  8.提供简单的安全模型，用户必须登录后购买商品。<br>  9.用户选择商品后可以在线提交订单。<br>  10.用户可以查看自己的订单信息。<br>  11.设计网站后台，管理网站的各项基本数据.<br>  12.系统运行安全稳定且响应及时。</p>
+</blockquote>
+<h3 id="功能结构"><a href="#功能结构" class="headerlink" title="功能结构"></a>功能结构</h3><p>  <img src="http://ol5smga16.bkt.clouddn.com/17-2-21/15084346-file_1487665255746_e9af.png" class="full-image"><br>  <img src="http://ol5smga16.bkt.clouddn.com/17-2-21/34070112-file_1487665738129_caba.png" width="500px" heigth="500px" class="full-image"><br><a id="more"></a></p>
+<h3 id="项目预览"><a href="#项目预览" class="headerlink" title="项目预览"></a>项目预览</h3><h2 id="数据库设计"><a href="#数据库设计" class="headerlink" title="数据库设计"></a>数据库设计</h2><h3 id="E-R图设计"><a href="#E-R图设计" class="headerlink" title="E-R图设计"></a>E-R图设计</h3><h2 id="创建数据库和数据表"><a href="#创建数据库和数据表" class="headerlink" title="创建数据库和数据表"></a>创建数据库和数据表</h2><h2 id="项目前期准备"><a href="#项目前期准备" class="headerlink" title="项目前期准备"></a>项目前期准备</h2><ul>
+<li>1.新建一个动态的web项目，名称为BooKStore</li>
+<li>2.确定项目运行的环境版本<br>  网上书城项目使用数据库MYSQL5.7版本，Java开发包为1.8 ，开发IDE MyEclipse 2016</li>
+<li>3.将本项目所需jar包导入项目的lib文件下。<br>  a.本项目使用c3p0数据源链接数据库，需要c3p0的jar包。<br>  b.项目的jsp页面使用了JSTL标签库，需要jstl.jar和 standard.jar包。<br>  c.项目中使用DBUtils工具处理数据的持久化操作，需要导入BeanUtils工具包。<br>  d.由于在注册时系统还会给注册用户填写的邮箱发送一封激活码，需要导入mail.jar包。<br>  本项目所需jar包如图所示：</li>
+<li>4.配置c3p0-config.xml。<br>  在项目Src根目录下创建该文件夹<br>  配置如图所示：</li>
+<li><p>5.编写filter过滤器<br>  a.防止项目请求和响应时出现的乱码情况，需要编写一个过滤器 EcondingFilter.java<br>  来统一全站编码，</p>
+<p>  b.由于本项目分为前后台，只有超级用户才能登陆后台管理系统，所以在用户登录时需要<br>  一个能够判断当前用户是否具有权限登录后台的过滤器，AdminPrivilegeFilter.java</p>
+</li>
+<li>编写工具类DataSourceUtils<br>该类用于获取数据源和数据库的链接</li>
+</ul>
+<h2 id="用户注册和登录模块"><a href="#用户注册和登录模块" class="headerlink" title="用户注册和登录模块"></a>用户注册和登录模块</h2><h3 id="用户注册"><a href="#用户注册" class="headerlink" title="用户注册"></a>用户注册</h3><h3 id="用户登录"><a href="#用户登录" class="headerlink" title="用户登录"></a>用户登录</h3><h2 id="购物车模块"><a href="#购物车模块" class="headerlink" title="购物车模块"></a>购物车模块</h2><h3 id="模块描述"><a href="#模块描述" class="headerlink" title="模块描述"></a>模块描述</h3><h3 id="实现购物车的基本功能"><a href="#实现购物车的基本功能" class="headerlink" title="实现购物车的基本功能"></a>实现购物车的基本功能</h3><h3 id="实现订单的相关功能"><a href="#实现订单的相关功能" class="headerlink" title="实现订单的相关功能"></a>实现订单的相关功能</h3><h2 id="图书信息查询模块"><a href="#图书信息查询模块" class="headerlink" title="图书信息查询模块"></a>图书信息查询模块</h2><h3 id="商品分类导航栏"><a href="#商品分类导航栏" class="headerlink" title="商品分类导航栏"></a>商品分类导航栏</h3><h3 id="搜索功能"><a href="#搜索功能" class="headerlink" title="搜索功能"></a>搜索功能</h3><h3 id="公告板和本周热卖"><a href="#公告板和本周热卖" class="headerlink" title="公告板和本周热卖"></a>公告板和本周热卖</h3><h2 id="前台小结"><a href="#前台小结" class="headerlink" title="前台小结"></a>前台小结</h2><h1 id="javawe实战：网上书城-后端管理"><a href="#javawe实战：网上书城-后端管理" class="headerlink" title="javawe实战：网上书城  后端管理"></a>javawe实战：网上书城  后端管理</h1><h2 id="后台管理系统概述"><a href="#后台管理系统概述" class="headerlink" title="后台管理系统概述"></a>后台管理系统概述</h2><h2 id="商品管理模块"><a href="#商品管理模块" class="headerlink" title="商品管理模块"></a>商品管理模块</h2><h3 id="商品管理模块简介"><a href="#商品管理模块简介" class="headerlink" title="商品管理模块简介"></a>商品管理模块简介</h3><h3 id="实现查询商品列表功能"><a href="#实现查询商品列表功能" class="headerlink" title="实现查询商品列表功能"></a>实现查询商品列表功能</h3><h3 id="实现添加商品信息功能"><a href="#实现添加商品信息功能" class="headerlink" title="实现添加商品信息功能"></a>实现添加商品信息功能</h3><h3 id="实现编辑商品信息功能"><a href="#实现编辑商品信息功能" class="headerlink" title="实现编辑商品信息功能"></a>实现编辑商品信息功能</h3><h3 id="实现删除商品信息功能"><a href="#实现删除商品信息功能" class="headerlink" title="实现删除商品信息功能"></a>实现删除商品信息功能</h3><h2 id="销售榜单模块"><a href="#销售榜单模块" class="headerlink" title="销售榜单模块"></a>销售榜单模块</h2><h2 id="订单管理模块"><a href="#订单管理模块" class="headerlink" title="订单管理模块"></a>订单管理模块</h2><h3 id="订单管理模块简介"><a href="#订单管理模块简介" class="headerlink" title="订单管理模块简介"></a>订单管理模块简介</h3><h3 id="实现查询订单列表功能"><a href="#实现查询订单列表功能" class="headerlink" title="实现查询订单列表功能"></a>实现查询订单列表功能</h3><h3 id="实现查看订单详情功能"><a href="#实现查看订单详情功能" class="headerlink" title="实现查看订单详情功能"></a>实现查看订单详情功能</h3><h3 id="实现删除订单功能"><a href="#实现删除订单功能" class="headerlink" title="实现删除订单功能"></a>实现删除订单功能</h3><h2 id="后台小结"><a href="#后台小结" class="headerlink" title="后台小结"></a>后台小结</h2>]]></content>
+      
+        <categories>
+            
+            <category> javaee笔记 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> javaee </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[开学笔记]]></title>
+      <url>http://pjc.party/2017/02/20/%E5%BC%80%E5%AD%A6%E7%AC%94%E8%AE%B0/</url>
+      <content type="html"><![CDATA[<h1 id="语录-javaEE开学第一课"><a href="#语录-javaEE开学第一课" class="headerlink" title="语录 javaEE开学第一课"></a>语录 javaEE开学第一课</h1><blockquote>
+<p>学习项目开发<br> 项目框架非常的熟<br> 业务走向，业务开发能力<br> 学习要达到精通水平，是为了就业<br> 学习三大框架ssh，只是学习了<br> 编程的魅力，今天你学习了这个知识，过一段时间回过头来，一定会有全新的体验，不同的理解<br>总结：温故而知新</p>
+<p>荒唐的背后是什么<br>  看小说，收到小说的的毒害。打架之后面的东西，是勇气。<br>  总结：什么都懂一点，但是不深奥。寻求本质！</p>
+</blockquote>
+<p>基于MVC开发模式</p>
+<h1 id="课程计划–javaweb程序开发进阶-传智播客"><a href="#课程计划–javaweb程序开发进阶-传智播客" class="headerlink" title="课程计划–javaweb程序开发进阶 传智播客"></a>课程计划–javaweb程序开发进阶 传智播客</h1><ul>
+<li>jsp进阶 为期 10周</li>
+<li>过滤器 监听器 EL表达式 JSP标签库 数据池 文件上传与下载</li>
+<li>收现金开发一个</li>
+</ul>
+<p>  <strong>学习的本质，just with youself</strong></p>
+<h1 id="新打算"><a href="#新打算" class="headerlink" title="新打算"></a>新打算</h1><ul>
+<li>以后将在此记录上课笔记，仅当记录那些年我们学过的 Hello World！</li>
+</ul>
+<p><a href="http://pjc.party">lvc唯爱</a></p>
+]]></content>
+      
+        <categories>
+            
+            <category> javaEE上课笔记 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> java web </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[春雏集-三月花]]></title>
+      <url>http://pjc.party/2017/02/10/%E6%98%A5%E9%9B%8F%E9%9B%86-%E4%B8%89%E6%9C%88%E8%8A%B1/</url>
+      <content type="html"><![CDATA[<h1 id="三月花"><a href="#三月花" class="headerlink" title="三月花"></a>三月花</h1><h3 id="二月的小城"><a href="#二月的小城" class="headerlink" title="二月的小城"></a>二月的小城</h3><p>沾酒的夜色有些隐晦，<br>暖冬的天气有些燥热，<br>燥动的不安是二月的酒气。</p>
+<p>盘着白雾的悬梁木板，<br>是二月老人家的烟火，<br>干烈的柴火是温暖的老宅。</p>
+<p>二月的小城，我的家，<br>几处青青，三月的花。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 春雏集 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[android笔记-Android文件下载]]></title>
+      <url>http://pjc.party/2017/02/09/android%E7%AC%94%E8%AE%B0-Android%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD/</url>
+      <content type="html"><![CDATA[<h1 id="android笔记-Android文件下载"><a href="#android笔记-Android文件下载" class="headerlink" title="android笔记-Android文件下载"></a>android笔记-Android文件下载</h1><h2 id="单线程下载"><a href="#单线程下载" class="headerlink" title="单线程下载"></a>单线程下载</h2><p>效果展示：<br><img src="http://p1.bpimg.com/567571/e3f2b78e00e9b469.png" alt="效果展示"><br><img src="http://p1.bpimg.com/567571/eb37ee9e4aa6869b.png" alt=""></p>
+<blockquote><p>主要过程：<br>1.新建DownloadLinstener接口<br>2.新建DoadloadTask继承AsycnTak<br>3.新建DownloadService 继承service<br>4.UI和Mainactivity实现</p>
+</blockquote>
+<blockquote>
+<p>代码</p>
+</blockquote>
+<ul>
+<li><p>DownloadLinstener接口实现*</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">public interface DownloadListener &#123;</div><div class="line"></div><div class="line">    void onProgress(int progress);</div><div class="line"></div><div class="line">    void onSuccess();</div><div class="line"></div><div class="line">    void onFailed();</div><div class="line"></div><div class="line">    void onPaused();</div><div class="line"></div><div class="line">    void onCanceled();</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div></pre></td></tr></table></figure>
+<a id="more"></a>
+</li>
+<li><p>DownloadTask实现 *</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div></pre></td><td class="code"><pre><div class="line">package com.lvc.downloaddemo;</div><div class="line"></div><div class="line"></div><div class="line">import android.os.AsyncTask;</div><div class="line">import android.os.Environment;</div><div class="line"></div><div class="line">import java.io.File;</div><div class="line">import java.io.IOException;</div><div class="line">import java.io.InputStream;</div><div class="line">import java.io.RandomAccessFile;</div><div class="line"></div><div class="line">import okhttp3.OkHttpClient;</div><div class="line">import okhttp3.Request;</div><div class="line">import okhttp3.Response;</div><div class="line"></div><div class="line">/**</div><div class="line"> * Created by lvc on 2017/2/9.</div><div class="line"> */</div><div class="line"></div><div class="line">public class DownloadTask extends AsyncTask&lt;String ,Integer ,Integer&gt; &#123;</div><div class="line"></div><div class="line">    // 下载常量 标识状态</div><div class="line">    public static final int TYPE_SUCCESS = 0;</div><div class="line">    public static final int TYPE_FAILED = 1;</div><div class="line">    public static final int TYPE_PAUSED = 2;</div><div class="line">    public static final int TYPE_CANCELED = 3;</div><div class="line"></div><div class="line">    private DownloadListener listener;</div><div class="line"></div><div class="line">    private Boolean isPaused =false;</div><div class="line">    private Boolean isCanceled = false;</div><div class="line"></div><div class="line">    private int lastProgress;</div><div class="line"></div><div class="line">    public DownloadTask(DownloadListener listener) &#123;</div><div class="line">        this.listener = listener;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    // 后台执行的下载逻辑</div><div class="line">    @Override</div><div class="line">    protected Integer doInBackground(String... params) &#123;</div><div class="line"></div><div class="line">        InputStream in = null;</div><div class="line">        RandomAccessFile savedFile = null;</div><div class="line">        File file = null;</div><div class="line"></div><div class="line">        try &#123;</div><div class="line">            long downloadLength = 0;</div><div class="line">            String downloadUrl = params[0];</div><div class="line">            String fileName = downloadUrl.substring(downloadUrl.lastIndexOf(&quot;/&quot;));</div><div class="line">            String directory = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath();</div><div class="line">            file = new File(directory+fileName);</div><div class="line">            if (file.exists())&#123;</div><div class="line">                downloadLength = file.length();</div><div class="line">            &#125;</div><div class="line">            long contentLength = getContentLength(downloadUrl);</div><div class="line">            if (contentLength == 0)&#123;</div><div class="line">                return TYPE_FAILED;</div><div class="line">            &#125;else if (contentLength == downloadLength)&#123;</div><div class="line">                return TYPE_SUCCESS;</div><div class="line">            &#125;</div><div class="line"></div><div class="line">            OkHttpClient client = new OkHttpClient();</div><div class="line">            Request request = new Request.Builder()</div><div class="line">                    //断点下载</div><div class="line">                    .addHeader(&quot;RANGE&quot;, &quot;bytes=&quot; + downloadLength + &quot;-&quot;)</div><div class="line">                    .url(downloadUrl)</div><div class="line">                    .build();</div><div class="line">            Response response = client.newCall(request).execute();</div><div class="line">            if (response != null)&#123;</div><div class="line">                in = response.body().byteStream();</div><div class="line">                savedFile = new RandomAccessFile(file,&quot;rw&quot;);</div><div class="line">                savedFile.seek(downloadLength);</div><div class="line">                byte[] b = new byte[1024];</div><div class="line">                int total =0;</div><div class="line">                int len ;</div><div class="line">                while ((len = in.read(b)) != -1)&#123;</div><div class="line">                    if (isCanceled)&#123;</div><div class="line">                        return  TYPE_CANCELED;</div><div class="line">                    &#125; else  if(isPaused)&#123;</div><div class="line">                        return TYPE_PAUSED;</div><div class="line">                    &#125; else&#123;</div><div class="line">                        total += len;</div><div class="line">                        savedFile.write(b,0,len);</div><div class="line">                        // 计算下载的百分比</div><div class="line">                        int progress = (int)((total+downloadLength)*100 / contentLength);</div><div class="line">                        publishProgress(progress);</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">                response.body().close();</div><div class="line">                return TYPE_SUCCESS;</div><div class="line">            &#125;</div><div class="line">        &#125; catch (IOException e) &#123;</div><div class="line">            e.printStackTrace();</div><div class="line">        &#125;finally &#123;</div><div class="line">            if(in != null)&#123;</div><div class="line">                try &#123;</div><div class="line">                    in.close();</div><div class="line">                &#125; catch (IOException e) &#123;</div><div class="line">                    e.printStackTrace();</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        if(savedFile != null)&#123;</div><div class="line">            try &#123;</div><div class="line">                savedFile.close();</div><div class="line">            &#125; catch (IOException e) &#123;</div><div class="line">                e.printStackTrace();</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        if (isCanceled &amp;&amp; file != null)&#123;</div><div class="line">            file.delete();</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        return TYPE_FAILED;</div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">    // 更新 下载进度</div><div class="line">    @Override</div><div class="line">    protected void onProgressUpdate(Integer... values) &#123;</div><div class="line"></div><div class="line">        int progress = values[0];</div><div class="line">        if(progress &gt; lastProgress)&#123;</div><div class="line">            listener.onProgress(progress);</div><div class="line">            lastProgress = progress;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    //最终下载的结果</div><div class="line">    @Override</div><div class="line">    protected void onPostExecute(Integer status) &#123;</div><div class="line">        //super.onPostExecute(status);</div><div class="line">        switch (status) &#123;</div><div class="line">            case TYPE_SUCCESS:</div><div class="line">                listener.onSuccess();</div><div class="line">                break;</div><div class="line">            case TYPE_FAILED:</div><div class="line">                listener.onFailed();</div><div class="line">                break;</div><div class="line">            case TYPE_PAUSED:</div><div class="line">                listener.onPaused();</div><div class="line">                break;</div><div class="line">            case TYPE_CANCELED:</div><div class="line">                listener.onCanceled();</div><div class="line">            default:</div><div class="line">                break;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line">    private long getContentLength(String downloadUrl) throws IOException &#123;</div><div class="line">        OkHttpClient client = new OkHttpClient();</div><div class="line">        Request request = new Request.Builder()</div><div class="line">                .url(downloadUrl)</div><div class="line">                .build();</div><div class="line">        Response response = client.newCall(request).execute();</div><div class="line">        if (response != null &amp;&amp; response.isSuccessful())&#123;</div><div class="line"></div><div class="line">            long contentlength = response.body().contentLength();</div><div class="line">            response.close();</div><div class="line">            return contentlength;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        return 0;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public void pausedDownload()&#123;</div><div class="line">        isPaused = true;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public void canceledDownlod()&#123;</div><div class="line">        isCanceled = true;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div></pre></td></tr></table></figure>
+</li>
+<li><p>DwonloadService实现*</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div></pre></td><td class="code"><pre><div class="line">package com.lvc.downloaddemo;</div><div class="line"></div><div class="line">import android.app.Notification;</div><div class="line">import android.app.NotificationManager;</div><div class="line">import android.app.PendingIntent;</div><div class="line">import android.app.Service;</div><div class="line">import android.content.Intent;</div><div class="line">import android.graphics.BitmapFactory;</div><div class="line">import android.os.Binder;</div><div class="line">import android.os.Environment;</div><div class="line">import android.os.IBinder;</div><div class="line">import android.support.v4.app.NotificationCompat;</div><div class="line">import android.util.Log;</div><div class="line">import android.widget.Toast;</div><div class="line"></div><div class="line">import java.io.File;</div><div class="line"></div><div class="line">public class DownloadService extends Service &#123;</div><div class="line"></div><div class="line">    private DownloadTask downloadTask ;</div><div class="line">    private String downloadUrl = null;</div><div class="line">    int i = 0;</div><div class="line"></div><div class="line">    private DownloadListener listener = new DownloadListener() &#123;</div><div class="line">        @Override</div><div class="line">        public void onProgress(int progress) &#123;</div><div class="line">            getNotificationManager().notify(1,getNotification(&quot;正在下载...&quot;,progress));</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        @Override</div><div class="line">        public void onSuccess() &#123;</div><div class="line">                downloadTask = null;</div><div class="line">                // 下载成功时将前台服务通知关闭，并创建一个下载成功的通知</div><div class="line">                stopForeground(true);</div><div class="line">                getNotificationManager().notify(1, getNotification(&quot;Download Success&quot;, -1));</div><div class="line">                Toast.makeText(DownloadService.this, &quot;Download Success&quot;, Toast.LENGTH_SHORT).show();</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        @Override</div><div class="line">        public void onFailed() &#123;</div><div class="line">            downloadTask = null;</div><div class="line">            // 下载失败时将前台服务通知关闭，并创建一个下载失败的通知</div><div class="line">            stopForeground(true);</div><div class="line">            getNotificationManager().notify(1, getNotification(&quot;Download Failed&quot;, -1));</div><div class="line">            Toast.makeText(DownloadService.this, &quot;Download Failed&quot;, Toast.LENGTH_SHORT).show();</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        @Override</div><div class="line">        public void onPaused() &#123;</div><div class="line">            downloadTask = null;</div><div class="line">            Toast.makeText(DownloadService.this, &quot;Paused&quot;, Toast.LENGTH_SHORT).show();</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        @Override</div><div class="line">        public void onCanceled() &#123;</div><div class="line"></div><div class="line">            downloadTask = null;</div><div class="line">            stopForeground(true);</div><div class="line">            Toast.makeText(DownloadService.this, &quot;Canceled&quot;, Toast.LENGTH_SHORT).show();</div><div class="line">        &#125;</div><div class="line">    &#125; ;</div><div class="line"></div><div class="line">    private DownloadBinder mBinder =new DownloadBinder();</div><div class="line"></div><div class="line">  /*  public DownloadService() &#123;</div><div class="line">    &#125;*/</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public IBinder onBind(Intent intent) &#123;</div><div class="line">        return mBinder;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    class DownloadBinder extends Binder&#123;</div><div class="line"></div><div class="line">        public void startDownload(String url)&#123;</div><div class="line"></div><div class="line">            if(downloadUrl == null)&#123;</div><div class="line">                downloadUrl =url;</div><div class="line">                downloadTask = new DownloadTask(listener);</div><div class="line">                downloadTask.execute(downloadUrl);</div><div class="line">                startForeground(1,getNotification(&quot;正在下载...&quot;,0));</div><div class="line">                Log.i(&quot;判断点击次数&quot;, &quot;startDownload: &quot;+i);</div><div class="line">                i++;</div><div class="line">                Toast.makeText(DownloadService.this, &quot;正在下载...&quot;, Toast.LENGTH_SHORT).show();</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        public void pauseDownload()&#123;</div><div class="line">            if(downloadTask !=null)&#123;</div><div class="line">                downloadTask.pausedDownload();</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        public void cancelDownload()&#123;</div><div class="line">            if(downloadTask != null)&#123;</div><div class="line">                downloadTask.canceledDownlod();</div><div class="line">            &#125;else&#123;</div><div class="line">                if(downloadUrl != null)&#123;</div><div class="line">                    //取消下载时需要将文件删除，并通知关闭</div><div class="line"></div><div class="line">                    String fileName = downloadUrl.substring(downloadUrl.lastIndexOf(&quot;/&quot;));</div><div class="line">                    String directory = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).getPath();</div><div class="line">                    File file = new File(directory + fileName);</div><div class="line">                    if(file.exists())&#123;</div><div class="line">                        file.delete();</div><div class="line">                    &#125;</div><div class="line">                    getNotificationManager().cancel(1);</div><div class="line">                    stopForeground(true);</div><div class="line">                    Toast.makeText(DownloadService.this, &quot;Canceled&quot;, Toast.LENGTH_SHORT).show();</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line"></div><div class="line"></div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line">    // 获取通知管理器</div><div class="line">    private NotificationManager getNotificationManager()&#123;</div><div class="line">        return (NotificationManager) getSystemService(NOTIFICATION_SERVICE);</div><div class="line">    &#125;</div><div class="line">    //通知详情</div><div class="line">    private Notification getNotification(String title,int progress)&#123;</div><div class="line">       // Intent intent  = new Intent(this,MainActivity.class);</div><div class="line">       // PendingIntent pi = PendingIntent.getActivities(this,0,new Intent[]&#123;intent&#125;,0);</div><div class="line"></div><div class="line">        Intent intent = new Intent(this, MainActivity.class);</div><div class="line">        PendingIntent pi = PendingIntent.getActivity(this, 0, intent, 0);</div><div class="line">        NotificationCompat.Builder builder = new NotificationCompat.Builder(this);</div><div class="line">        builder.setSmallIcon(R.mipmap.ic_launcher);</div><div class="line">        builder.setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher));</div><div class="line">        builder.setContentIntent(pi);</div><div class="line">        builder.setContentTitle(title);</div><div class="line">        if(progress &gt;= 0)&#123;</div><div class="line">            builder.setContentText(progress + &quot;%&quot;);</div><div class="line">            builder.setProgress(100,progress,false);</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        return builder.build();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div></pre></td></tr></table></figure>
+</li>
+<li><p>Mainactivity实现 UI布局简单就不贴了*</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div></pre></td><td class="code"><pre><div class="line">package com.lvc.downloaddemo;</div><div class="line"></div><div class="line">import android.Manifest;</div><div class="line">import android.content.ComponentName;</div><div class="line">import android.content.Intent;</div><div class="line">import android.content.ServiceConnection;</div><div class="line">import android.content.pm.PackageManager;</div><div class="line">import android.os.IBinder;</div><div class="line">import android.support.annotation.NonNull;</div><div class="line">import android.support.v4.app.ActivityCompat;</div><div class="line">import android.support.v4.content.ContextCompat;</div><div class="line">import android.support.v7.app.AppCompatActivity;</div><div class="line">import android.os.Bundle;</div><div class="line">import android.view.View;</div><div class="line">import android.widget.Button;</div><div class="line">import android.widget.Toast;</div><div class="line"></div><div class="line">public class MainActivity extends AppCompatActivity implements View.OnClickListener &#123;</div><div class="line"></div><div class="line">    private DownloadService.DownloadBinder downloadBinder;</div><div class="line">    private ServiceConnection connection = new ServiceConnection() &#123;</div><div class="line">        @Override</div><div class="line">        public void onServiceConnected(ComponentName componentName, IBinder iBinder) &#123;</div><div class="line">            downloadBinder = (DownloadService.DownloadBinder) iBinder;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        @Override</div><div class="line">        public void onServiceDisconnected(ComponentName componentName) &#123;</div><div class="line"></div><div class="line">        &#125;</div><div class="line">    &#125;;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    protected void onCreate(Bundle savedInstanceState) &#123;</div><div class="line">        super.onCreate(savedInstanceState);</div><div class="line">        setContentView(R.layout.activity_main);</div><div class="line">        Button startDownload = (Button) findViewById(R.id.btn_start);</div><div class="line">        Button pauseDownload = (Button) findViewById(R.id.btn_paused);</div><div class="line">        Button cancelDownload = (Button) findViewById(R.id.btn_cancel);</div><div class="line">        startDownload.setOnClickListener(this);</div><div class="line">        pauseDownload.setOnClickListener(this);</div><div class="line">        cancelDownload.setOnClickListener(this);</div><div class="line"></div><div class="line">        Intent intent = new Intent(this,DownloadService.class);</div><div class="line">        startService(intent);</div><div class="line">        bindService(intent,connection,BIND_AUTO_CREATE);</div><div class="line">        if (ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) &#123;</div><div class="line">            ActivityCompat.requestPermissions(MainActivity.this, new String[]&#123; Manifest.permission. WRITE_EXTERNAL_STORAGE &#125;, 1);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public void onClick(View view) &#123;</div><div class="line"></div><div class="line">        if (downloadBinder == null) &#123;</div><div class="line">            return;</div><div class="line">        &#125;</div><div class="line">        switch (view.getId()) &#123;</div><div class="line">            case R.id.btn_start:</div><div class="line">                String url = &quot;http://www.runoob.com/wp-content/uploads/2015/09/DownLoadDemo1.zip&quot;;</div><div class="line">                downloadBinder.startDownload(url);</div><div class="line">                break;</div><div class="line">            case R.id.btn_paused:</div><div class="line">                downloadBinder.pauseDownload();</div><div class="line">                break;</div><div class="line">            case R.id.btn_cancel:</div><div class="line">                downloadBinder.cancelDownload();</div><div class="line">                break;</div><div class="line">            default:</div><div class="line">                break;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) &#123;</div><div class="line">        switch (requestCode) &#123;</div><div class="line">            case 1:</div><div class="line">                if (grantResults.length &gt; 0 &amp;&amp; grantResults[0] != PackageManager.PERMISSION_GRANTED) &#123;</div><div class="line">                    Toast.makeText(this, &quot;拒绝权限将无法使用程序&quot;, Toast.LENGTH_SHORT).show();</div><div class="line">                    finish();</div><div class="line">                &#125;</div><div class="line">                break;</div><div class="line">            default:</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    protected void onDestroy() &#123;</div><div class="line">        super.onDestroy();</div><div class="line">        unbindService(connection);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="多线程下载"><a href="#多线程下载" class="headerlink" title="多线程下载"></a>多线程下载</h2><p>  多线程的下载流程</p>
+<blockquote>
+<ul>
+<li>获取网络连接<ul>
+<li>本地磁盘创建相同大小的空文件</li>
+<li>计算每条线程需从文件哪个部分开始下载，结束</li>
+<li>依次创建，启动多条线程来下载网络资源的指定部分</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<p>核心代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure></p>
+]]></content>
+      
+        <categories>
+            
+            <category> android </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> android </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[android笔记-HttpURLConnection]]></title>
+      <url>http://pjc.party/2017/02/07/android%E7%AC%94%E8%AE%B0-HttpURLConnection/</url>
+      <content type="html"><![CDATA[<h1 id="android笔记-HttpURLConnection"><a href="#android笔记-HttpURLConnection" class="headerlink" title="android笔记-HttpURLConnection"></a>android笔记-HttpURLConnection</h1><h1 id="报错"><a href="#报错" class="headerlink" title="报错"></a>报错</h1><blockquote>
+<p> 调用<code>InputStream in = connection.getErrorStream();</code> 报错</p>
+<a id="more"></a>
+<h1 id="主要代码-使用okhttp"><a href="#主要代码-使用okhttp" class="headerlink" title="主要代码  使用okhttp"></a>主要代码  使用okhttp</h1><p>直接上代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div></pre></td><td class="code"><pre><div class="line">package com.lvc.nnetworktest.util;</div><div class="line"></div><div class="line">import java.io.BufferedReader;</div><div class="line">import java.io.IOException;</div><div class="line">import java.io.InputStream;</div><div class="line">import java.io.InputStreamReader;</div><div class="line">import java.net.HttpURLConnection;</div><div class="line"></div><div class="line">import java.net.URL;</div><div class="line"></div><div class="line">import okhttp3.OkHttpClient;</div><div class="line">import okhttp3.Request;</div><div class="line">import okhttp3.Response;</div><div class="line"></div><div class="line">/**</div><div class="line"> * Created by lvc on 2017/2/7.</div><div class="line"> * 网络请求util</div><div class="line"> * 封装了 httpURLConnection   &amp;  okhttp3</div><div class="line"> */</div><div class="line"></div><div class="line">public class HtppUtil &#123;</div><div class="line"></div><div class="line">    public static void sendHttpRequest(final String address,final HttpCallbackListener listener)&#123;</div><div class="line">       new Thread(new Runnable() &#123;</div><div class="line">           @Override</div><div class="line">           public void run() &#123;</div><div class="line">               HttpURLConnection connection = null;</div><div class="line">               //InputStream in =null;</div><div class="line">               try &#123;</div><div class="line">                   URL url = new URL(address);</div><div class="line">                   connection = (HttpURLConnection) url.openConnection();</div><div class="line">                   connection.setRequestMethod(&quot;GET&quot;);</div><div class="line">                   connection.setConnectTimeout(8000);</div><div class="line">                   connection.setReadTimeout(8000);</div><div class="line">                   connection.setDoInput(true);</div><div class="line">                   connection.setDoOutput(true);</div><div class="line">                   InputStream in = connection.getErrorStream();</div><div class="line">                   BufferedReader reader = new BufferedReader(new InputStreamReader(in));</div><div class="line">                   StringBuilder response = new StringBuilder();</div><div class="line">                   String line;</div><div class="line">                   while((line =reader.readLine())!=null)&#123;</div><div class="line">                       response.append(line);</div><div class="line">                   &#125;</div><div class="line"></div><div class="line">                   if(listener != null)&#123;</div><div class="line">                       listener.onFinish(response.toString());</div><div class="line">                   &#125;</div><div class="line">               &#125; catch (Exception e) &#123;</div><div class="line">                   e.printStackTrace();</div><div class="line"></div><div class="line">                   if(listener != null)&#123;</div><div class="line">                       listener.onError(e);</div><div class="line">                   &#125;</div><div class="line">               &#125;finally &#123;</div><div class="line">                   if(connection != null)&#123;</div><div class="line">                       connection.disconnect();</div><div class="line">                   &#125;</div><div class="line">              /*    if (in != null)&#123;</div><div class="line">                      try &#123;</div><div class="line">                          in.close();</div><div class="line">                      &#125; catch (IOException e) &#123;</div><div class="line">                          e.printStackTrace();</div><div class="line">                      &#125;</div><div class="line">                  &#125;*/</div><div class="line">               &#125;</div><div class="line"></div><div class="line">           &#125;</div><div class="line">       &#125;).start();</div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line">    public interface HttpCallbackListener&#123;</div><div class="line">        void onFinish(String response);</div><div class="line">        void onError(Exception e);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    /**</div><div class="line">     * okhttp3</div><div class="line">     */</div><div class="line">    public static void sendOkhttpRequest(String address , okhttp3.Callback callback)&#123;</div><div class="line">        OkHttpClient client = new OkHttpClient();</div><div class="line">        Request request = new Request.Builder()</div><div class="line">                .url(address)</div><div class="line">                .build();</div><div class="line">        client.newCall(request).enqueue(callback); //调用回调</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div></pre></td></tr></table></figure></p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> android </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> android </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[闲言碎语-西游降魔篇]]></title>
+      <url>http://pjc.party/2017/02/06/%E9%97%B2%E8%A8%80%E7%A2%8E%E8%AF%AD-%E8%A5%BF%E6%B8%B8%E9%99%8D%E9%AD%94%E7%AF%87/</url>
+      <content type="html"><![CDATA[<p><img src="http://img31.mtime.cn/mg/2013/05/10/233548.64005207.jpg" alt="女孩子闭上眼睛就是要你亲她" title="女孩子闭上眼睛就是要你亲她"></p>
+<h1 id="西游真的是那个西游吗"><a href="#西游真的是那个西游吗" class="headerlink" title="西游真的是那个西游吗"></a>西游真的是那个西游吗</h1><div align="center"><br>许久不见，或许是一种情怀！<br>可这又有什么关系呢？<br><br>佛是什么？你又是什么？我又是什么？<br>西游真的是西游吗？<br><br>22部天竺真经真的能普度众生吗？<br>度的人，应该是他自己吧。<br></div>
+
+<h1 id="一生所爱-是被用坏了的情怀吗？"><a href="#一生所爱-是被用坏了的情怀吗？" class="headerlink" title="一生所爱 是被用坏了的情怀吗？"></a>一生所爱 是被用坏了的情怀吗？</h1><div align="center"><br>终究你我将不复存在<br>关于执念你我懂多少<br>不同的人有不同世界<br>一生真的能爱个够吗<br><br>陈先生历经千辛万苦<br>只寻普度众生的良药<br>可是大爱小爱<br>说不清道不明<br><br><br>在制服猪刚鬣的之时<br>孙先生出了一个法子<br>在月圆之夜，绝山之巅<br>段小姐翩然起舞，<br>宛若谪仙，人间不应有<br>一生所爱的歌声，<br>纵然是情怀作祟。<br></div>
+
+<h1 id="我的西游"><a href="#我的西游" class="headerlink" title="我的西游"></a>我的西游</h1><div align="center"><br>我希望寻找自己的西游之路，<br>不为普度众生只为度我自己。<br><br>西游终究是被烙印在骨子里，<br>流淌的血液在轰轰的燃烧着，<br><br>可是红尘真的有 真 善 美 ？<br><br>愿意相信的谎言，<br>我愿意，那就有。<br><br></div>
+]]></content>
+      
+        <categories>
+            
+            <category> 春雏集 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 闲言碎语 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[android笔记-调用摄像头相册]]></title>
+      <url>http://pjc.party/2017/02/06/android%E7%AC%94%E8%AE%B0-%E8%B0%83%E7%94%A8%E6%91%84%E5%83%8F%E5%A4%B4%E7%9B%B8%E5%86%8C/</url>
+      <content type="html"><![CDATA[<h1 id="调用摄像头"><a href="#调用摄像头" class="headerlink" title="调用摄像头"></a>调用摄像头</h1><h2 id="调用摄像头拍照获取图片"><a href="#调用摄像头拍照获取图片" class="headerlink" title="调用摄像头拍照获取图片"></a>调用摄像头拍照获取图片</h2><blockquote>
+<p>Demo：<br>效果展示</p>
+</blockquote>
+<p><img src="http://p1.bpimg.com/567571/1e99c5d0d9dd9c9a.png " width="25%" height="20%"></p>
+<h3 id="重要代码"><a href="#重要代码" class="headerlink" title="重要代码"></a>重要代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">//创建File 对象，用于存储拍照后的图片</div><div class="line">File outputImage = new File(getExternalCacheDir(),&quot;output_image.jsp&quot;);</div><div class="line">try &#123;</div><div class="line">    if(outputImage.exists())&#123;</div><div class="line">        outputImage.delete();</div><div class="line">    &#125;</div><div class="line">    outputImage.createNewFile();</div><div class="line">&#125;catch (IOException e)&#123;</div><div class="line">    e.printStackTrace();</div><div class="line">&#125;</div><div class="line">if(Build.VERSION.SDK_INT&gt;=24)&#123;</div><div class="line">    imageUri = FileProvider.getUriForFile(MainActivity.this,&quot;com.example.cramea.fileprovider&quot;,</div><div class="line">            outputImage);</div><div class="line"></div><div class="line">&#125;else&#123;</div><div class="line">    imageUri = Uri.fromFile(outputImage);</div><div class="line">&#125;</div><div class="line">//启动相机程序</div><div class="line">Intent intent = new Intent(&quot;android.media.action.IMAGE_CAPTURE&quot;);</div><div class="line">intent.putExtra(MediaStore.EXTRA_OUTPUT,imageUri);</div><div class="line">startActivityForResult(intent,TAKE_PHOTO);</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="从相册中选择图片"><a href="#从相册中选择图片" class="headerlink" title="从相册中选择图片"></a>从相册中选择图片</h2><h3 id="全部代码"><a href="#全部代码" class="headerlink" title="全部代码"></a>全部代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div></pre></td><td class="code"><pre><div class="line">package com.lvc.cameraalbumtest;</div><div class="line"></div><div class="line">import android.Manifest;</div><div class="line">import android.annotation.TargetApi;</div><div class="line">import android.app.Activity;</div><div class="line">import android.content.ContentUris;</div><div class="line">import android.content.Intent;</div><div class="line">import android.content.pm.PackageManager;</div><div class="line">import android.database.Cursor;</div><div class="line">import android.graphics.Bitmap;</div><div class="line">import android.graphics.BitmapFactory;</div><div class="line">import android.net.Uri;</div><div class="line">import android.os.Build;</div><div class="line">import android.provider.DocumentsContract;</div><div class="line">import android.provider.MediaStore;</div><div class="line">import android.support.annotation.NonNull;</div><div class="line">import android.support.v4.app.ActivityCompat;</div><div class="line">import android.support.v4.content.ContextCompat;</div><div class="line">import android.support.v4.content.FileProvider;</div><div class="line">import android.support.v7.app.AppCompatActivity;</div><div class="line">import android.os.Bundle;</div><div class="line">import android.view.View;</div><div class="line">import android.widget.Button;</div><div class="line">import android.widget.ImageView;</div><div class="line">import android.widget.Toast;</div><div class="line"></div><div class="line">import java.io.File;</div><div class="line">import java.io.FileNotFoundException;</div><div class="line">import java.io.IOException;</div><div class="line"></div><div class="line">public class MainActivity extends AppCompatActivity &#123;</div><div class="line"></div><div class="line">    public static final  int TAKE_PHOTO = 1;</div><div class="line">    public static final int CHOOSE_PHOTO = 2;</div><div class="line"></div><div class="line">    private Button takephoto ;</div><div class="line">    private Button choosephoto ;</div><div class="line">    private ImageView pictrue ;</div><div class="line">    private Uri imageUri ;</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">    @Override</div><div class="line">    protected void onCreate(Bundle savedInstanceState) &#123;</div><div class="line">        super.onCreate(savedInstanceState);</div><div class="line">        setContentView(R.layout.activity_main);</div><div class="line">        /**</div><div class="line">         * 1.获取实例</div><div class="line">         * 2.绑定监听事件</div><div class="line">         *</div><div class="line">          */</div><div class="line">        takephoto = (Button) findViewById(R.id.take_photo);</div><div class="line">        choosephoto = (Button) findViewById(R.id.choose_from_album);</div><div class="line">        pictrue = (ImageView) findViewById(R.id.picture);</div><div class="line">        takephoto.setOnClickListener(new View.OnClickListener() &#123;</div><div class="line">            @Override</div><div class="line">            public void onClick(View view) &#123;</div><div class="line">                //创建File 对象，用于存储拍照后的图片</div><div class="line">                File outputImage = new File(getExternalCacheDir(),&quot;output_image.jsp&quot;);</div><div class="line">                try &#123;</div><div class="line">                    if(outputImage.exists())&#123;</div><div class="line">                        outputImage.delete();</div><div class="line">                    &#125;</div><div class="line">                    outputImage.createNewFile();</div><div class="line">                &#125;catch (IOException e)&#123;</div><div class="line">                    e.printStackTrace();</div><div class="line">                &#125;</div><div class="line">                if(Build.VERSION.SDK_INT&gt;=24)&#123;</div><div class="line">                    imageUri = FileProvider.getUriForFile(MainActivity.this,&quot;com.example.cramea.fileprovider&quot;,</div><div class="line">                            outputImage);</div><div class="line"></div><div class="line">                &#125;else&#123;</div><div class="line">                    imageUri = Uri.fromFile(outputImage);</div><div class="line">                &#125;</div><div class="line">                //启动相机程序</div><div class="line">                Intent intent = new Intent(&quot;android.media.action.IMAGE_CAPTURE&quot;);</div><div class="line">                intent.putExtra(MediaStore.EXTRA_OUTPUT,imageUri);</div><div class="line">                startActivityForResult(intent,TAKE_PHOTO);</div><div class="line">            &#125;</div><div class="line">        &#125;);</div><div class="line"></div><div class="line">        choosephoto.setOnClickListener(new View.OnClickListener() &#123;</div><div class="line">            @Override</div><div class="line">            public void onClick(View view) &#123;</div><div class="line">                if(ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE)</div><div class="line">                        != PackageManager.PERMISSION_GRANTED)&#123;</div><div class="line">                    ActivityCompat.requestPermissions(MainActivity.this,new String[]&#123;Manifest.permission.WRITE_EXTERNAL_STORAGE&#125;,1);</div><div class="line"></div><div class="line">                &#125;else&#123;</div><div class="line">                    openAlbum();</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;);</div><div class="line"></div><div class="line">    &#125;</div><div class="line"></div><div class="line">    /**</div><div class="line">     *</div><div class="line">     */</div><div class="line">    private void openAlbum()&#123;</div><div class="line">        Intent intent =new Intent(&quot;android.intent.action.GET_CONTENT&quot;);</div><div class="line">        intent.setType(&quot;image/*&quot;);</div><div class="line">        startActivityForResult(intent,CHOOSE_PHOTO);</div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line">    @Override</div><div class="line">    protected void onActivityResult(int requestCode, int resultCode, Intent data) &#123;</div><div class="line">       // super.onActivityResult(requestCode, resultCode, data);</div><div class="line">        switch (requestCode)&#123;</div><div class="line">            case TAKE_PHOTO:</div><div class="line">                try &#123;</div><div class="line">                    Bitmap bitmap = BitmapFactory.decodeStream(getContentResolver()</div><div class="line">                    .openInputStream(imageUri));</div><div class="line">                    pictrue.setImageBitmap(bitmap);</div><div class="line">                &#125; catch (FileNotFoundException e) &#123;</div><div class="line">                    e.printStackTrace();</div><div class="line">                &#125;</div><div class="line">                break;</div><div class="line">            case CHOOSE_PHOTO:</div><div class="line">                if(resultCode == RESULT_OK )&#123;</div><div class="line">                    //判断手机系统版本号</div><div class="line">                    if(Build.VERSION.SDK_INT&gt;=19)&#123;</div><div class="line">                        //4.4及以上版本使用这个方法处理图片</div><div class="line">                        handleImageOnKiKat(data);</div><div class="line">                    &#125;else&#123;</div><div class="line">                        //4.4以下版本使用这个方法处理图片</div><div class="line">                        handleImageBeforeKiKat(data);</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">                break;</div><div class="line">            default:</div><div class="line">                break;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    private void handleImageBeforeKiKat(Intent data) &#123;</div><div class="line">        Uri uri = data.getData();</div><div class="line">        String imagepath = getImagePath(uri,null);</div><div class="line">        displayImage(imagepath);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @TargetApi(19)</div><div class="line">    private void handleImageOnKiKat(Intent data) &#123;</div><div class="line">        String imagePath= null;</div><div class="line">        Uri uri = data.getData();</div><div class="line">        if(DocumentsContract.isDocumentUri(this,uri))&#123;</div><div class="line">            String docId = DocumentsContract.getDocumentId(uri);</div><div class="line">            if(&quot;com.android.providers.media.documents&quot;.equals(uri.getAuthority()))&#123;</div><div class="line">                String id = docId.split(&quot;:&quot;)[1];</div><div class="line">                String selection = MediaStore.Images.Media._ID+&quot;=&quot;+id;</div><div class="line">                imagePath = getImagePath(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,selection);</div><div class="line">            &#125;else if(&quot;com.android.providers.downloads.documents&quot;.equals(uri.getAuthority()))&#123;</div><div class="line">                Uri contentUri = ContentUris.withAppendedId(Uri.parse(&quot;content://downloads/public_downloads&quot;),Long.valueOf(docId));</div><div class="line">                imagePath = getImagePath(contentUri,null);</div><div class="line">            &#125;</div><div class="line"></div><div class="line">        &#125;else if(&quot;content&quot;.equalsIgnoreCase(uri.getScheme()))&#123;</div><div class="line">            imagePath = getImagePath(uri,null);</div><div class="line">        &#125;else if(&quot;file&quot;.equalsIgnoreCase(uri.getScheme()))&#123;</div><div class="line">            imagePath = uri.getPath();</div><div class="line">        &#125;</div><div class="line">        displayImage(imagePath);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) &#123;</div><div class="line">        //super.onRequestPermissionsResult(requestCode, permissions, grantResults);</div><div class="line">        switch (requestCode)&#123;</div><div class="line">            case 1:</div><div class="line">                if(grantResults.length &gt; 0 &amp;&amp; grantResults[0] == PackageManager.PERMISSION_GRANTED )&#123;</div><div class="line">                    openAlbum();</div><div class="line">                &#125;else&#123;</div><div class="line">                    Toast.makeText(this,&quot;you denied the permisson&quot;,Toast.LENGTH_SHORT).show();</div><div class="line">                   // openAlbum();</div><div class="line">                &#125;</div><div class="line">                break;</div><div class="line">            default:</div><div class="line">                break;</div><div class="line"></div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line">    private String getImagePath(Uri uri,String selection)&#123;</div><div class="line">        String path =null;</div><div class="line">        //通过Uri和 selection 来获取真实的图片路径</div><div class="line">        Cursor cursor = getContentResolver().query(uri,null,selection,null,null);</div><div class="line">        if(cursor != null)&#123;</div><div class="line">            if (cursor.moveToNext())&#123;</div><div class="line">                path = cursor.getString(cursor.getColumnIndex(MediaStore.Images.Media.DATA));</div><div class="line">            &#125;</div><div class="line">            cursor.close();</div><div class="line">        &#125;</div><div class="line">        return path;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    private void displayImage(String imagePath)&#123;</div><div class="line">        if (imagePath !=null)&#123;</div><div class="line">            Bitmap bitmap = BitmapFactory.decodeFile(imagePath);</div><div class="line">            pictrue.setImageBitmap(bitmap);</div><div class="line"></div><div class="line">        &#125;else&#123;</div><div class="line">            Toast.makeText(this,&quot;Failed to get image&quot;,Toast.LENGTH_SHORT).show();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div></pre></td></tr></table></figure>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><blockquote>
+<p>博客真难写<br>想做个记录发现不知道怎么去记<br>汗颜啊</p>
+</blockquote>
+]]></content>
+      
+        <categories>
+            
+            <category> android </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> android </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[android笔记-使用通知]]></title>
+      <url>http://pjc.party/2017/02/05/android%E7%AC%94%E8%AE%B0-%E4%BD%BF%E7%94%A8%E9%80%9A%E7%9F%A5/</url>
+      <content type="html"><![CDATA[<h1 id="Android笔记-使用通知"><a href="#Android笔记-使用通知" class="headerlink" title="Android笔记-使用通知"></a>Android笔记-使用通知</h1><h2 id="通知的基本用法"><a href="#通知的基本用法" class="headerlink" title="通知的基本用法"></a>通知的基本用法</h2><blockquote>
+<p>代码</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);</div><div class="line">               Notification notification = new NotificationCompat.Builder(this)</div><div class="line">                       .setContentTitle(&quot;通知&quot;)</div><div class="line">                       .setContentText(&quot;这是一个通知！&quot;)</div><div class="line">                       .setWhen(System.currentTimeMillis())</div><div class="line">                       .setSmallIcon(R.mipmap.ic_launcher)</div><div class="line">                       .setLargeIcon(BitmapFactory.decodeResource(getResources(),R.mipmap.ic_launcher))</div><div class="line">                       .build();</div><div class="line">               notificationManager.notify(1,notification);</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="PendingIntent"><a href="#PendingIntent" class="headerlink" title="PendingIntent"></a>PendingIntent</h2><p>可以简单的理解为延迟执行的Intent</p>
+<h3 id="pendingIntent-用法"><a href="#pendingIntent-用法" class="headerlink" title="pendingIntent 用法"></a>pendingIntent 用法</h3><p>1.获取PendingIntent实例：<br>    <code>getActivity()</code><br>    <code>getBroadcast()</code><br>     <code>getService()</code></p>
+<pre><code>&gt; 以上方法参数相同：
+    * 1 context
+    * 2 0 通常传入0
+    * 3 Intent对象
+    * 4 用于确定PendingIntent的行为 有4个值：FLAG_ONE_SHOT  FLAG_ON_CREATE  FLAG_CANEL_CURRENT FLAG_UPDATE_CURRENT
+</code></pre><h2 id="给通知添加响应"><a href="#给通知添加响应" class="headerlink" title="给通知添加响应"></a>给通知添加响应</h2><blockquote>
+<p>代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">Intent intent = new Intent(this,NotificationActivity.class);</div><div class="line">               Intent[] intents = &#123;intent&#125;;</div><div class="line">               PendingIntent pi = PendingIntent.getActivities(this,0,intents,0);</div><div class="line">               NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);</div><div class="line">               Notification notification = new NotificationCompat.Builder(this)</div><div class="line">                       .setContentTitle(&quot;通知&quot;)</div><div class="line">                       .setContentText(&quot;这是一个通知！&quot;)</div><div class="line">                       .setWhen(System.currentTimeMillis())</div><div class="line">                       .setSmallIcon(R.mipmap.ic_launcher)</div><div class="line">                       .setLargeIcon(BitmapFactory.decodeResource(getResources(),R.mipmap.ic_launcher))</div><div class="line">                       .setContentIntent(pi)</div><div class="line">                       .build();</div><div class="line">               notificationManager.notify(1,notification);</div></pre></td></tr></table></figure></p>
+</blockquote>
+<h2 id="取消通知栏上的通知"><a href="#取消通知栏上的通知" class="headerlink" title="取消通知栏上的通知"></a>取消通知栏上的通知</h2><pre><code>`.setAutoCancel(true)`
+
+在响应的Activity中 添加
+    1.NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+    2.notificationManager.cancel(1);
+</code></pre>]]></content>
+      
+        <categories>
+            
+            <category> android </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> android </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[我的第一篇博客]]></title>
+      <url>http://pjc.party/2017/02/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+      <content type="html"><![CDATA[<blockquote>
+<p>没有正式文章，仅作为当前内容的测试！</p>
+<p>做个简单的小结<br>昨天在慕课网手记中看到 hexo + github pages 搭建个人博客<br>  经过长时间的学习，再一次觉得开源的伟大!<br>  用了不到一天的时间，杂七杂八的也就成这个样子了</p>
+</blockquote>
+<p>  实践才是检验真理的唯一标准</p>
+<blockquote>
+<p>坚持每天学点东西吧。<br>这也算还了我一个小愿望！<br>2017 任重而道远! 下一步，开发一个APP！ ——Lvc</p>
+</blockquote>
+]]></content>
+      
+        
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+  
+  
+</search>

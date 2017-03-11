@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="lvc" />
+
+
+
+<meta name="description" content="调用摄像头调用摄像头拍照获取图片
+Demo：效果展示
+
+
+重要代码123456789101112131415161718192021//创建File 对象，用于存储拍照后的图片File outputImage = new File(getExternalCacheDir(),&amp;quot;output_image.jsp&amp;quot;);try &amp;#123;    if(outputImage.exi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="android笔记-调用摄像头相册">
+<meta property="og:url" content="http://pjc.party/2017/02/06/android笔记-调用摄像头相册/index.html">
+<meta property="og:site_name" content="iLvc's Blog">
+<meta property="og:description" content="调用摄像头调用摄像头拍照获取图片
+Demo：效果展示
+
+
+重要代码123456789101112131415161718192021//创建File 对象，用于存储拍照后的图片File outputImage = new File(getExternalCacheDir(),&amp;quot;output_image.jsp&amp;quot;);try &amp;#123;    if(outputImage.exi">
+<meta property="og:image" content="http://p1.bpimg.com/567571/1e99c5d0d9dd9c9a.png ">
+<meta property="og:updated_time" content="2017-02-10T11:14:26.717Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="android笔记-调用摄像头相册">
+<meta name="twitter:description" content="调用摄像头调用摄像头拍照获取图片
+Demo：效果展示
+
+
+重要代码123456789101112131415161718192021//创建File 对象，用于存储拍照后的图片File outputImage = new File(getExternalCacheDir(),&amp;quot;output_image.jsp&amp;quot;);try &amp;#123;    if(outputImage.exi">
+<meta name="twitter:image" content="http://p1.bpimg.com/567571/1e99c5d0d9dd9c9a.png ">
+
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="iLvc&#39;s Blog" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>android笔记-调用摄像头相册 | iLvc&#39;s Blog</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: true
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?91a5cf9a85639ea8ef8502003a9f1e44";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">lvc</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">life may always have regret, but the future is still good.�������������ź�����δ���������á�</p>
+        
+
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:328097822@qq.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" href="https://github.com/ilvc" title="GitHub"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa QQ" href="/328097822" title="QQ"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/android/">android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java-web/">java web</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaee/">javaee</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javaee笔记/">javaee笔记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/学习/">学习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/学习方法/">学习方法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/感悟/">感悟</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/春雏集/">春雏集</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/生活/">生活</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/闲言碎语/">闲言碎语</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http:/pjc.party/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">lvc</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">lvc</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">life may always have regret, but the future is still good.�������������ź�����δ���������á�</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:328097822@qq.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/ilvc" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa QQ" target="_blank" href="/328097822" title="QQ"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap"><article id="post-android笔记-调用摄像头相册" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/02/06/android笔记-调用摄像头相册/" class="article-date">
+      <time datetime="2017-02-06T05:59:28.000Z" itemprop="datePublished">2017-02-06</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      android笔记-调用摄像头相册
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/android/">android</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="调用摄像头"><a href="#调用摄像头" class="headerlink" title="调用摄像头"></a>调用摄像头</h1><h2 id="调用摄像头拍照获取图片"><a href="#调用摄像头拍照获取图片" class="headerlink" title="调用摄像头拍照获取图片"></a>调用摄像头拍照获取图片</h2><blockquote>
+<p>Demo：<br>效果展示</p>
+</blockquote>
+<p><img src="http://p1.bpimg.com/567571/1e99c5d0d9dd9c9a.png " width="25%" height="20%"></p>
+<h3 id="重要代码"><a href="#重要代码" class="headerlink" title="重要代码"></a>重要代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">//创建File 对象，用于存储拍照后的图片</div><div class="line">File outputImage = new File(getExternalCacheDir(),&quot;output_image.jsp&quot;);</div><div class="line">try &#123;</div><div class="line">    if(outputImage.exists())&#123;</div><div class="line">        outputImage.delete();</div><div class="line">    &#125;</div><div class="line">    outputImage.createNewFile();</div><div class="line">&#125;catch (IOException e)&#123;</div><div class="line">    e.printStackTrace();</div><div class="line">&#125;</div><div class="line">if(Build.VERSION.SDK_INT&gt;=24)&#123;</div><div class="line">    imageUri = FileProvider.getUriForFile(MainActivity.this,&quot;com.example.cramea.fileprovider&quot;,</div><div class="line">            outputImage);</div><div class="line"></div><div class="line">&#125;else&#123;</div><div class="line">    imageUri = Uri.fromFile(outputImage);</div><div class="line">&#125;</div><div class="line">//启动相机程序</div><div class="line">Intent intent = new Intent(&quot;android.media.action.IMAGE_CAPTURE&quot;);</div><div class="line">intent.putExtra(MediaStore.EXTRA_OUTPUT,imageUri);</div><div class="line">startActivityForResult(intent,TAKE_PHOTO);</div></pre></td></tr></table></figure>
+<a id="more"></a>
+<h2 id="从相册中选择图片"><a href="#从相册中选择图片" class="headerlink" title="从相册中选择图片"></a>从相册中选择图片</h2><h3 id="全部代码"><a href="#全部代码" class="headerlink" title="全部代码"></a>全部代码</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div></pre></td><td class="code"><pre><div class="line">package com.lvc.cameraalbumtest;</div><div class="line"></div><div class="line">import android.Manifest;</div><div class="line">import android.annotation.TargetApi;</div><div class="line">import android.app.Activity;</div><div class="line">import android.content.ContentUris;</div><div class="line">import android.content.Intent;</div><div class="line">import android.content.pm.PackageManager;</div><div class="line">import android.database.Cursor;</div><div class="line">import android.graphics.Bitmap;</div><div class="line">import android.graphics.BitmapFactory;</div><div class="line">import android.net.Uri;</div><div class="line">import android.os.Build;</div><div class="line">import android.provider.DocumentsContract;</div><div class="line">import android.provider.MediaStore;</div><div class="line">import android.support.annotation.NonNull;</div><div class="line">import android.support.v4.app.ActivityCompat;</div><div class="line">import android.support.v4.content.ContextCompat;</div><div class="line">import android.support.v4.content.FileProvider;</div><div class="line">import android.support.v7.app.AppCompatActivity;</div><div class="line">import android.os.Bundle;</div><div class="line">import android.view.View;</div><div class="line">import android.widget.Button;</div><div class="line">import android.widget.ImageView;</div><div class="line">import android.widget.Toast;</div><div class="line"></div><div class="line">import java.io.File;</div><div class="line">import java.io.FileNotFoundException;</div><div class="line">import java.io.IOException;</div><div class="line"></div><div class="line">public class MainActivity extends AppCompatActivity &#123;</div><div class="line"></div><div class="line">    public static final  int TAKE_PHOTO = 1;</div><div class="line">    public static final int CHOOSE_PHOTO = 2;</div><div class="line"></div><div class="line">    private Button takephoto ;</div><div class="line">    private Button choosephoto ;</div><div class="line">    private ImageView pictrue ;</div><div class="line">    private Uri imageUri ;</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">    @Override</div><div class="line">    protected void onCreate(Bundle savedInstanceState) &#123;</div><div class="line">        super.onCreate(savedInstanceState);</div><div class="line">        setContentView(R.layout.activity_main);</div><div class="line">        /**</div><div class="line">         * 1.获取实例</div><div class="line">         * 2.绑定监听事件</div><div class="line">         *</div><div class="line">          */</div><div class="line">        takephoto = (Button) findViewById(R.id.take_photo);</div><div class="line">        choosephoto = (Button) findViewById(R.id.choose_from_album);</div><div class="line">        pictrue = (ImageView) findViewById(R.id.picture);</div><div class="line">        takephoto.setOnClickListener(new View.OnClickListener() &#123;</div><div class="line">            @Override</div><div class="line">            public void onClick(View view) &#123;</div><div class="line">                //创建File 对象，用于存储拍照后的图片</div><div class="line">                File outputImage = new File(getExternalCacheDir(),&quot;output_image.jsp&quot;);</div><div class="line">                try &#123;</div><div class="line">                    if(outputImage.exists())&#123;</div><div class="line">                        outputImage.delete();</div><div class="line">                    &#125;</div><div class="line">                    outputImage.createNewFile();</div><div class="line">                &#125;catch (IOException e)&#123;</div><div class="line">                    e.printStackTrace();</div><div class="line">                &#125;</div><div class="line">                if(Build.VERSION.SDK_INT&gt;=24)&#123;</div><div class="line">                    imageUri = FileProvider.getUriForFile(MainActivity.this,&quot;com.example.cramea.fileprovider&quot;,</div><div class="line">                            outputImage);</div><div class="line"></div><div class="line">                &#125;else&#123;</div><div class="line">                    imageUri = Uri.fromFile(outputImage);</div><div class="line">                &#125;</div><div class="line">                //启动相机程序</div><div class="line">                Intent intent = new Intent(&quot;android.media.action.IMAGE_CAPTURE&quot;);</div><div class="line">                intent.putExtra(MediaStore.EXTRA_OUTPUT,imageUri);</div><div class="line">                startActivityForResult(intent,TAKE_PHOTO);</div><div class="line">            &#125;</div><div class="line">        &#125;);</div><div class="line"></div><div class="line">        choosephoto.setOnClickListener(new View.OnClickListener() &#123;</div><div class="line">            @Override</div><div class="line">            public void onClick(View view) &#123;</div><div class="line">                if(ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE)</div><div class="line">                        != PackageManager.PERMISSION_GRANTED)&#123;</div><div class="line">                    ActivityCompat.requestPermissions(MainActivity.this,new String[]&#123;Manifest.permission.WRITE_EXTERNAL_STORAGE&#125;,1);</div><div class="line"></div><div class="line">                &#125;else&#123;</div><div class="line">                    openAlbum();</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;);</div><div class="line"></div><div class="line">    &#125;</div><div class="line"></div><div class="line">    /**</div><div class="line">     *</div><div class="line">     */</div><div class="line">    private void openAlbum()&#123;</div><div class="line">        Intent intent =new Intent(&quot;android.intent.action.GET_CONTENT&quot;);</div><div class="line">        intent.setType(&quot;image/*&quot;);</div><div class="line">        startActivityForResult(intent,CHOOSE_PHOTO);</div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line">    @Override</div><div class="line">    protected void onActivityResult(int requestCode, int resultCode, Intent data) &#123;</div><div class="line">       // super.onActivityResult(requestCode, resultCode, data);</div><div class="line">        switch (requestCode)&#123;</div><div class="line">            case TAKE_PHOTO:</div><div class="line">                try &#123;</div><div class="line">                    Bitmap bitmap = BitmapFactory.decodeStream(getContentResolver()</div><div class="line">                    .openInputStream(imageUri));</div><div class="line">                    pictrue.setImageBitmap(bitmap);</div><div class="line">                &#125; catch (FileNotFoundException e) &#123;</div><div class="line">                    e.printStackTrace();</div><div class="line">                &#125;</div><div class="line">                break;</div><div class="line">            case CHOOSE_PHOTO:</div><div class="line">                if(resultCode == RESULT_OK )&#123;</div><div class="line">                    //判断手机系统版本号</div><div class="line">                    if(Build.VERSION.SDK_INT&gt;=19)&#123;</div><div class="line">                        //4.4及以上版本使用这个方法处理图片</div><div class="line">                        handleImageOnKiKat(data);</div><div class="line">                    &#125;else&#123;</div><div class="line">                        //4.4以下版本使用这个方法处理图片</div><div class="line">                        handleImageBeforeKiKat(data);</div><div class="line">                    &#125;</div><div class="line">                &#125;</div><div class="line">                break;</div><div class="line">            default:</div><div class="line">                break;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    private void handleImageBeforeKiKat(Intent data) &#123;</div><div class="line">        Uri uri = data.getData();</div><div class="line">        String imagepath = getImagePath(uri,null);</div><div class="line">        displayImage(imagepath);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @TargetApi(19)</div><div class="line">    private void handleImageOnKiKat(Intent data) &#123;</div><div class="line">        String imagePath= null;</div><div class="line">        Uri uri = data.getData();</div><div class="line">        if(DocumentsContract.isDocumentUri(this,uri))&#123;</div><div class="line">            String docId = DocumentsContract.getDocumentId(uri);</div><div class="line">            if(&quot;com.android.providers.media.documents&quot;.equals(uri.getAuthority()))&#123;</div><div class="line">                String id = docId.split(&quot;:&quot;)[1];</div><div class="line">                String selection = MediaStore.Images.Media._ID+&quot;=&quot;+id;</div><div class="line">                imagePath = getImagePath(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,selection);</div><div class="line">            &#125;else if(&quot;com.android.providers.downloads.documents&quot;.equals(uri.getAuthority()))&#123;</div><div class="line">                Uri contentUri = ContentUris.withAppendedId(Uri.parse(&quot;content://downloads/public_downloads&quot;),Long.valueOf(docId));</div><div class="line">                imagePath = getImagePath(contentUri,null);</div><div class="line">            &#125;</div><div class="line"></div><div class="line">        &#125;else if(&quot;content&quot;.equalsIgnoreCase(uri.getScheme()))&#123;</div><div class="line">            imagePath = getImagePath(uri,null);</div><div class="line">        &#125;else if(&quot;file&quot;.equalsIgnoreCase(uri.getScheme()))&#123;</div><div class="line">            imagePath = uri.getPath();</div><div class="line">        &#125;</div><div class="line">        displayImage(imagePath);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) &#123;</div><div class="line">        //super.onRequestPermissionsResult(requestCode, permissions, grantResults);</div><div class="line">        switch (requestCode)&#123;</div><div class="line">            case 1:</div><div class="line">                if(grantResults.length &gt; 0 &amp;&amp; grantResults[0] == PackageManager.PERMISSION_GRANTED )&#123;</div><div class="line">                    openAlbum();</div><div class="line">                &#125;else&#123;</div><div class="line">                    Toast.makeText(this,&quot;you denied the permisson&quot;,Toast.LENGTH_SHORT).show();</div><div class="line">                   // openAlbum();</div><div class="line">                &#125;</div><div class="line">                break;</div><div class="line">            default:</div><div class="line">                break;</div><div class="line"></div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line"></div><div class="line">    private String getImagePath(Uri uri,String selection)&#123;</div><div class="line">        String path =null;</div><div class="line">        //通过Uri和 selection 来获取真实的图片路径</div><div class="line">        Cursor cursor = getContentResolver().query(uri,null,selection,null,null);</div><div class="line">        if(cursor != null)&#123;</div><div class="line">            if (cursor.moveToNext())&#123;</div><div class="line">                path = cursor.getString(cursor.getColumnIndex(MediaStore.Images.Media.DATA));</div><div class="line">            &#125;</div><div class="line">            cursor.close();</div><div class="line">        &#125;</div><div class="line">        return path;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    private void displayImage(String imagePath)&#123;</div><div class="line">        if (imagePath !=null)&#123;</div><div class="line">            Bitmap bitmap = BitmapFactory.decodeFile(imagePath);</div><div class="line">            pictrue.setImageBitmap(bitmap);</div><div class="line"></div><div class="line">        &#125;else&#123;</div><div class="line">            Toast.makeText(this,&quot;Failed to get image&quot;,Toast.LENGTH_SHORT).show();</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div></pre></td></tr></table></figure>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><blockquote>
+<p>博客真难写<br>想做个记录发现不知道怎么去记<br>汗颜啊</p>
+</blockquote>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/02/06/android笔记-调用摄像头相册/">android笔记-调用摄像头相册</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">lvc</a></p>
+        <p><span>发布时间:</span>2017-02-06, 13:59:28</p>
+        <p><span>最后更新:</span>2017-02-10, 19:14:26</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/02/06/android笔记-调用摄像头相册/" title="android笔记-调用摄像头相册">http://pjc.party/2017/02/06/android笔记-调用摄像头相册/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://pjc.party/2017/02/06/android笔记-调用摄像头相册/　　作者: lvc" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2017/02/06/闲言碎语-西游降魔篇/">
+                    闲言碎语-西游降魔篇
+                </a>
+            </div>
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2017/02/05/android笔记-使用通知/">
+                    android笔记-使用通知
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#调用摄像头"><span class="toc-number">1.</span> <span class="toc-text">调用摄像头</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#调用摄像头拍照获取图片"><span class="toc-number">1.1.</span> <span class="toc-text">调用摄像头拍照获取图片</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#重要代码"><span class="toc-number">1.1.1.</span> <span class="toc-text">重要代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#从相册中选择图片"><span class="toc-number">1.2.</span> <span class="toc-text">从相册中选择图片</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#全部代码"><span class="toc-number">1.2.1.</span> <span class="toc-text">全部代码</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#总结"><span class="toc-number">2.</span> <span class="toc-text">总结</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"android笔记-调用摄像头相册　| iLvc's Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <div id="comment-box" ></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2017/02/06/android笔记-调用摄像头相册/" data-title="android笔记-调用摄像头相册" data-url="http://pjc.party/2017/02/06/android笔记-调用摄像头相册/"></div>
+    <script>
+        var duoshuoQuery = {short_name:"pjcparty"};
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            s.async = true; s.charset = 'UTF-8';
+            (d.head || d.body).appendChild(s);
+        }
+
+        
+    </script>
+    
+    <script> loadComment(); </script>
+
+</div>
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/02/06/闲言碎语-西游降魔篇/" title="上一篇: 闲言碎语-西游降魔篇">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2017/02/05/android笔记-使用通知/" title="下一篇: android笔记-使用通知">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/03/11/闲言碎语-心灵访客/">闲言碎语-心灵访客</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/11/android：卫星式菜单/">android：卫星式菜单</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/11/深入理解Android中的自定义属性/">深入理解Android中的自定义属性</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/05/学习方法：黑马高薪学习方法/">学习方法：黑马高薪学习方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/05/春雏集-流动的思绪/">春雏集-流动的思绪</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/03/javaee上课笔记-Servlet事件监听器/">javaee上课笔记-Servlet事件监听器</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/01/春雏集：看见花落也凋零/">春雏集：看见花落也凋零</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/03/01/javaee上课笔记-DBUtils工具/">javaee上课笔记:DBUtils工具</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/25/Android上课笔记-快速入门/">Android上课笔记-快速入门</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/24/android笔记-Drawable/">android笔记-Drawable</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/22/春雏集-优雅的活着/">春雏集:优雅的活着</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/20/Android上课笔记-第一课/">Android笔记-第一课</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/20/javaweb实战：网上书城/">javaweb实战：网上书城</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/20/开学笔记/">开学笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/10/春雏集-三月花/">春雏集-三月花</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/09/android笔记-Android文件下载/">android笔记-Android文件下载</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/07/android笔记-HttpURLConnection/">android笔记-HttpURLConnection</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/06/闲言碎语-西游降魔篇/">闲言碎语-西游降魔篇</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/06/android笔记-调用摄像头相册/">android笔记-调用摄像头相册</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/05/android笔记-使用通知/">android笔记-使用通知</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/02/03/我的第一篇博客/">我的第一篇博客</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2016-2017 lvc
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+             categories: ".article-category a, a.tag-list-link", 
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+             menu: ".header-menu a", 
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
